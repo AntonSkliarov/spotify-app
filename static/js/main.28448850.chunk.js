@@ -1,0 +1,2 @@
+(this["webpackJsonpspotify-app"]=this["webpackJsonpspotify-app"]||[]).push([[0],{9:function(e,t,p){"use strict";p.r(t);var s=p(0),n=(p(1),p(3));var c=function(){return Object(s.jsx)("div",{className:"App",children:Object(s.jsx)("h1",{children:"Hey Spotify!"})})};p.n(n).a.render(Object(s.jsx)(c,{}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.28448850.chunk.js.map
