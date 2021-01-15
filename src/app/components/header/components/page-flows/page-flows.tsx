@@ -1,5 +1,6 @@
 import React from 'react';
 import './page-flows.sass';
+import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
 export const PageFlows = () => (
   <div className="page-flows">
@@ -8,7 +9,7 @@ export const PageFlows = () => (
         type="button"
         className="button page-flows__button"
       >
-        Back
+        <IoChevronBack size={25} />
     </button>
     </span>
 
@@ -17,7 +18,7 @@ export const PageFlows = () => (
         type="button"
         className="button page-flows__button page-flows__button_disabled"
       >
-        Forward
+        <IoChevronForward size={25} />
     </button>
     </span>
 
