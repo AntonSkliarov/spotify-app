@@ -2,7 +2,7 @@ import React from 'react';
 import './page-flows.sass';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
-export const PageFlows = () => (
+export const PageFlows: React.FC = () => (
   <div className="page-flows">
     <span className="page-flows__arrow">
       <button

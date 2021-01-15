@@ -1,0 +1,90 @@
+{
+  "user": {
+    "firstName": "Adam",
+    "lastName": "Lowenthal",
+    "id": 1,
+    "photo": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg",
+    "friends": [
+      {
+        "firstName": "Sam",
+        "lastName": "Smith",
+        "id": 1
+      },
+      {
+        "firstName": "Tarah",
+        "lastName": "Forsyth",
+        "id": 2
+      },
+      {
+        "firstName": "Ricahrd",
+        "lastName": "Tomkins",
+        "id": 3
+      },
+      {
+        "firstName": "Tony",
+        "lastName": "Russo",
+        "id": 4
+      },
+      {
+        "firstName": "Alyssa",
+        "lastName": "Marist",
+        "id": 5
+      },
+      {
+        "firstName": "Ron",
+        "lastName": "Samson",
+        "id": 6
+      }
+    ],
+    "playlists": [
+      {
+        "name": "Doo Wop",
+        "id": 1
+      },
+      {
+        "name": "Pop Classics",
+        "id": 2
+      },
+      {
+        "name": "Love $ongs",
+        "id": 3
+      },
+      {
+        "name": "Hipster",
+        "id": 4
+      },
+      {
+        "name": "New Music Friday",
+        "id": 5
+      },
+      {
+        "name": "Techno Poppers",
+        "id": 6
+      },
+      {
+        "name": "Summer Soothers",
+        "id": 7
+      },
+      {
+        "name": "Hard Rap",
+        "id": 8
+      },
+      {
+        "name": "Pop Rap",
+        "id": 9
+      },
+      {
+        "name": "5 Stars",
+        "id": 10
+      },
+      {
+        "name": "Dope Dancin",
+        "id": 11
+      },
+      {
+        "name": "Sleep",
+        "id": 12
+      }
+    ]
+  }
+}

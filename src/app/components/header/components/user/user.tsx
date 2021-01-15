@@ -4,8 +4,12 @@ import { UserActions } from './components/user-actions';
 import { UserInfo } from './components/user-info';
 import './user.sass';
 import { IoMdArchive } from 'react-icons/io';
+import userFixture from '../../../../../api/userFixture.json';
 
-export const User = () => (
+const { user } = userFixture;
+console.log(user);
+
+export const User: React.FC = () => (
   <div className="user">
     <div className="user__notifications">
       <IoNotifications />
@@ -14,7 +18,7 @@ export const User = () => (
       <IoMdArchive />
     </div>
 
-    <UserInfo />
+    <UserInfo user={user}/>
     <UserActions />
   </div>
 );
