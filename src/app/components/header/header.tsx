@@ -1,10 +1,12 @@
 import React from 'react';
 import './header.sass';
+import { PageFlows } from './components/page-flows';
+import { Search } from './components/search';
 
 export const Header = () => (
   <section className="header">
-    <div className="page-flows"></div>
-    <div className="search"></div>
+    <PageFlows />
+    <Search />
     <div className="user"></div>
   </section>
 );
