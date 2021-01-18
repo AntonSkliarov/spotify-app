@@ -7,7 +7,6 @@ import { IoMdArchive } from 'react-icons/io';
 import userFixture from '../../../../../api/userFixture.json';
 
 const { user } = userFixture;
-console.log(user);
 
 export const User: React.FC = () => (
   <div className="user">

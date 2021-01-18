@@ -6,17 +6,17 @@ interface UserInfoProps {
   user: IUser,
 }
 
-export const UserInfo: React.FC<UserInfoProps> = () => (
+export const UserInfo: React.FC<UserInfoProps> = ({ user }) => (
   <div className="user-info">
     <div className="user-info__img-container">
       <img
         className="user-info__img"
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg"
+        src={user.photo}
         alt="Profile Picture"
       />
     </div>
     <div className="user-info__name">
-      <span>Adam Lowenthal</span>
+      <span>{`${user.firstName} ${user.lastName}`}</span>
     </div>
   </div>
 );
