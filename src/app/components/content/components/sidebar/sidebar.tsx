@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navigation } from './components/navigation';
-import './sidebar-menu.sass';
+import './sidebar.sass';
 
-export const SidebarMenu: React.FC = () => (
-  <aside className="sidebar-menu">
+export const Sidebar: React.FC = () => (
+  <aside className="sidebar">
     <Navigation />
     <section>New Playlist</section>
     <section>Playing</section>

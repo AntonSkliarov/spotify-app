@@ -1,10 +1,10 @@
 import React from 'react';
-import { SidebarMenu } from './components/sidebar-menu';
+import { Sidebar } from './components/sidebar';
 import './content.sass';
 
 export const Content: React.FC = () => (
   <section className="content">
-    <SidebarMenu />
+    <Sidebar />
     <div>Artist</div>
     <div>Social</div>
   </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavList } from './components/nav-list';
+import { NavMenu } from './components/nav-menu';
 import './navigation.sass';
 import userFixture from '../../../../../../../api/userFixture.json';
 
@@ -8,17 +8,17 @@ const { user } = userFixture;
 export const Navigation: React.FC = () => (
   <section className="navigation">
 
-    <NavList
+    <NavMenu
       title={"main"}
       user={user}
     />
 
-    <NavList
+    <NavMenu
       title={"your music"}
       user={user}
     />
 
-    <NavList
+    <NavMenu
       title={"playlists"}
       user={user}
     />
