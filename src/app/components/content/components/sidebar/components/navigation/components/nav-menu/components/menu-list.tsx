@@ -13,7 +13,6 @@ export const MenuList: React.FC<NavMenuProps> = ({ user, title }) => {
         <li className="menu-list__item" key={item.id}>
 
           <a className="menu-list__link" href="#">
-
             <span className="menu-list__icon">
               {ICONS[title][index].icon}
             </span>

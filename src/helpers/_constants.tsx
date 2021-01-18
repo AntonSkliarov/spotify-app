@@ -19,101 +19,101 @@ export const ICONS: IIcons = {
   "main": [
     {
       "name": "Browse",
-      "icon": <IoIosBrowsers />,
+      "icon": <IoIosBrowsers size={12}/>,
       "id": 1
     },
     {
       "name": "Activity",
-      "icon": <IoPerson />,
+      "icon": <IoPerson size={12}/>,
       "id": 2
     },
     {
       "name": "Radio",
-      "icon": <IoRadio />,
+      "icon": <IoRadio size={12}/>,
       "id": 3
     }
   ],
   "your music": [
     {
       "name": "Songs",
-      "icon": <FaHeadphones />,
+      "icon": <FaHeadphones size={12}/>,
       "id": 1
     },
     {
       "name": "Albums",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 2
     },
     {
       "name": "Artists",
-      "icon": <IoPerson />,
+      "icon": <IoPerson size={12}/>,
       "id": 3
     },
     {
       "name": "Local Files",
-      "icon": <IoDocumentOutline />,
+      "icon": <IoDocumentOutline size={12}/>,
       "id": 4
     }
   ],
   "playlists": [
     {
       "name": "Doo Wop",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 1
     },
     {
       "name": "Pop Classics",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 2
     },
     {
       "name": "Love $ongs",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 3
     },
     {
       "name": "Hipster",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 4
     },
     {
       "name": "New Music Friday",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 5
     },
     {
       "name": "Techno Poppers",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 6
     },
     {
       "name": "Summer Soothers",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 7
     },
     {
       "name": "Hard Rap",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 8
     },
     {
       "name": "Pop Rap",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 9
     },
     {
       "name": "5 Stars",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 10
     },
     {
       "name": "Dope Dancin",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 11
     },
     {
       "name": "Sleep",
-      "icon": <IoMusicalNotes />,
+      "icon": <IoMusicalNotes size={12}/>,
       "id": 12
     }
   ]
