@@ -36,6 +36,38 @@
         "id": 6
       }
     ],
+    "main": [
+      {
+        "name": "Browse",
+        "id": 1
+      },
+      {
+        "name": "Activity",
+        "id": 2
+      },
+      {
+        "name": "Radio",
+        "id": 3
+      }
+    ],
+    "yourMusic": [
+      {
+        "name": "Songs",
+        "id": 1
+      },
+      {
+        "name": "Albums",
+        "id": 2
+      },
+      {
+        "name": "Artists",
+        "id": 3
+      },
+      {
+        "name": "Local Files",
+        "id": 4
+      }
+    ],
     "playlists": [
       {
         "name": "Doo Wop",

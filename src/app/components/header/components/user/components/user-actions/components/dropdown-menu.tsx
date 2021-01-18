@@ -1,7 +1,7 @@
 import React from 'react';
 import './dropdown-menu.sass';
 
-export const DropdownMenu = () => (
+export const DropdownMenu: React.FC = () => (
   <ul className="dropdown-menu">
     <li className="dropdown-menu__item">
       <a className="dropdown-menu__link" href="#">

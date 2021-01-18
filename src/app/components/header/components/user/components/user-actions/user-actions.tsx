@@ -4,9 +4,9 @@ import { DropdownMenu } from './components';
 import './user-actions.sass';
 
 export const UserActions: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  const onClick = () => {
+  const onClick = (): void => {
     setMenuOpen(!menuOpen);
   };
 
