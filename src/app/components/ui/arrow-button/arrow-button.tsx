@@ -51,7 +51,7 @@ export const ArrowButton: React.FC<IArrowButtonProps> = ({
       return (
         <button
           type="button"
-          className="arrow-button arrow-button_down"
+          className="arrow-button arrow-button__down"
           onClick={onClick}
         >
           <IoChevronDown size={25} />
@@ -62,7 +62,7 @@ export const ArrowButton: React.FC<IArrowButtonProps> = ({
       return (
         <button
           type="button"
-          className="arrow-button arrow-button_up"
+          className="arrow-button arrow-button__up"
           onClick={onClick}
         >
           <IoChevronUp size={25} />
