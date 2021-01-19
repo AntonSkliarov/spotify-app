@@ -1,6 +1,8 @@
 @import '../../../../helpers/_variables'
 
 .arrow-button
+  display: inline-block
+
   color: $grey
 
   border: none
@@ -14,3 +16,12 @@
 
   &_disabled
     color: darken($grey , 30%)
+
+    &:hover
+      color: darken($grey , 30%)
+
+      cursor: default
+
+  &_down,
+  &_up
+    margin-right: $margin-sm

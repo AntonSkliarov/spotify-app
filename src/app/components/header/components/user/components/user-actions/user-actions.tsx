@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IoChevronDown, IoChevronUp } from 'react-icons/io5';
+import { ArrowButton } from '../../../../../ui/arrow-button';
 import { DropdownMenu } from './components';
 import './user-actions.sass';
 
@@ -12,29 +12,13 @@ export const UserActions: React.FC = () => {
 
   return (
     <div className="user-actions">
-      {!menuOpen && (
-        <button
-          className="button user-actions__button"
-          type="button"
-          onClick={onClick}
-        >
-          <IoChevronDown size={25} />
-        </button>
-      )}
 
-      {menuOpen && (
-      <>
-        <button
-          className="button user-actions__button"
-          type="button"
-          onClick={onClick}
-        >
-          <IoChevronUp size={25} />
-        </button>
+      <ArrowButton
+        type={menuOpen ? 'up' : 'down'}
+        onClick={onClick}
+      />
 
-        <DropdownMenu />
-      </>
-      )}
+      {menuOpen && <DropdownMenu />}
 
     </div>
   );
