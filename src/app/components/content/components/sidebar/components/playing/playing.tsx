@@ -2,7 +2,8 @@ import React from 'react';
 import './playing.sass';
 import currentTrack from '../../../../../../../api/currentTrack.json';
 import { ITrack } from '../../../../../../../helpers/interfaces';
-import { IoCheckmark } from 'react-icons/io5';
+import { AddToFavButton } from '../../../../../ui/add-to-fav-button';
+
 
 const track: ITrack = currentTrack.track;
 
@@ -23,8 +24,6 @@ export const Playing: React.FC = () => (
       </a>
     </div>
 
-    <div className="playing__add-to-playlist">
-      <IoCheckmark />
-    </div>
+    <AddToFavButton />
   </section>
 );
