@@ -1,29 +1,57 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './menu-list.sass';
 import { NavMenuProps } from '../nav-menu';
 import { IPlaylist, IMain, IYourMusic } from '../../../../../../../../../../helpers/interfaces';
 import { ICONS } from '../../../../../../../../../../helpers/_constants';
 
-export type NavMenuItemType = IPlaylist | IMain | IYourMusic;
+export type MenuListItemType = IPlaylist | IMain | IYourMusic;
 
-export const MenuList: React.FC<NavMenuProps> = ({ user, title }) => {
+interface MenuListProps extends NavMenuProps {
+  isVisible: boolean;
+}
+
+export const MenuList: React.FC<MenuListProps> = ({
+  user,
+  title,
+  isVisible
+}) => {
+  const listRef = useRef<HTMLUListElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isVisible && listRef.current !== null) {
+      listRef.current.style.height = '0';
+    }
+
+    if (isVisible
+      && wrapperRef.current !== null
+      && listRef.current !== null
+    ) {
+      const wrapperHeight = wrapperRef.current.clientHeight;
+      listRef.current.style.height = wrapperHeight + 'px';
+    }
+  }, [isVisible]);
+
   return (
-    <ul className="menu-list">
-      {user[title].map((item: NavMenuItemType, index: number) => (
-        <li className="menu-list__item" key={item.id}>
+    <ul ref={listRef} className="menu-list">
+      <div ref={wrapperRef} className="menu-list__wrapper">
 
-          <a className="menu-list__link" href="#">
-            <span className="menu-list__icon">
-              {ICONS[title][index].icon}
-            </span>
+        {user[title].map((item: MenuListItemType, index: number) => (
+          <li className="menu-list__item" key={item.id}>
 
-            <span className="menu-list__title">
-              {item.name}
-            </span>
-          </a>
+            <a className="menu-list__link" href="#">
+              <span className="menu-list__icon">
+                {ICONS[title][index].icon}
+              </span>
 
-        </li>
-      ))}
+              <span className="menu-list__title">
+                {item.name}
+              </span>
+            </a>
+
+          </li>
+        ))}
+      </div>
     </ul>
   );
 };

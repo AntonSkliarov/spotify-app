@@ -1,6 +1,9 @@
 @import '../../../../../../../../../../helpers/_variables'
 
 .menu-list
+  overflow: hidden
+  transition: height 0.5s ease-in-out
+
   &__link
     display: flex
     flex-flow: row nowrap
@@ -19,4 +22,4 @@
       border-right: 3px solid $green
 
   &__icon
-    margin-right: $margin-xs
+    margin-right: $margin-sm
