@@ -3,7 +3,7 @@ import './add-to-fav-button.sass';
 import { GoCheck } from "react-icons/go";
 import { IoAdd } from 'react-icons/io5';
 
-export const AddToFavButton = () => {
+export const AddToFavButton: React.FC = () => {
   const [addedToFavorites, setAddedToFavorites] = useState<boolean>(true);
 
   const onClick = (): void => {

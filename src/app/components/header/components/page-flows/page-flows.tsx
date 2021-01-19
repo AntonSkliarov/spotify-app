@@ -1,25 +1,16 @@
 import React from 'react';
 import './page-flows.sass';
-import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
+import { ArrowButton } from '../../../ui/arrow-button';
 
 export const PageFlows: React.FC = () => (
   <div className="page-flows">
+
     <span className="page-flows__arrow">
-      <button
-        type="button"
-        className="button page-flows__button"
-      >
-        <IoChevronBack size={25} />
-    </button>
+      <ArrowButton type={'back'} />
     </span>
 
     <span className="page-flows__arrow">
-      <button
-        type="button"
-        className="button page-flows__button page-flows__button_disabled"
-      >
-        <IoChevronForward size={25} />
-    </button>
+      <ArrowButton type={'forward'} disabled={true}/>
     </span>
 
   </div>
