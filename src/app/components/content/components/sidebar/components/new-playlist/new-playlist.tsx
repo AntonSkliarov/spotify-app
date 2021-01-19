@@ -2,7 +2,7 @@ import React from 'react';
 import { IoAddCircleOutline } from 'react-icons/io5';
 import './new-playlist.sass';
 
-export const NewPlaylist = () => (
+export const NewPlaylist: React.FC = () => (
   <section className="new-playlist">
     <a className="new-playlist__link" href="#">
 

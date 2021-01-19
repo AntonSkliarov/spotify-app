@@ -18,7 +18,7 @@ export const MenuList: React.FC<MenuListProps> = ({
   const listRef = useRef<HTMLUListElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useEffect((): void => {
     if (!isVisible && listRef.current !== null) {
       listRef.current.style.height = '0';
     }
