@@ -1,6 +1,10 @@
 import React from 'react';
-import './current-track.sass'
+import './current-track.sass';
 
-export const CurrentTrack = () => (
-  <section className="current-track">Bottom bar</section>
+export const CurrentTrack: React.FC = () => (
+  <section className="current-track">
+    <div>Action</div>
+    <div>Progress</div>
+    <div>Options</div>
+  </section>
 );
