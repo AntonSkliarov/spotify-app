@@ -1,11 +1,12 @@
 import React from 'react';
 import { Actions } from './components/actions';
+import { Progress } from './components/progress';
 import './current-track.sass';
 
 export const CurrentTrack: React.FC = () => (
   <section className="current-track">
     <Actions />
-    <div>Progress</div>
+    <Progress />
     <div>Options</div>
   </section>
 );
