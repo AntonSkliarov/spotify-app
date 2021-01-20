@@ -1,0 +1,33 @@
+@import '../../../../helpers/_variables'
+
+.song-progress
+  &.noUi-target
+    height: 4px
+
+    border: none
+
+  & .noUi-connect
+    background: $green
+
+  & .noUi-base
+    background: darken( $grey , 30% )
+
+  &.noUi-horizontal .noUi-origin
+    background: darken( $grey , 30% )
+
+  &.noUi-horizontal .noUi-handle
+    display: none
+    left: 100%
+
+    width: 15px
+    height: 15px
+
+    background: $sand
+    border-radius: 50%
+    box-shadow: none
+    border: none
+    outline: none
+
+    &:before,
+    &:after
+      background: none
