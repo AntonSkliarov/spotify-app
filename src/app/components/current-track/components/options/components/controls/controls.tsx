@@ -1,4 +1,5 @@
 import React from 'react';
+import { Devices } from '../../../../../ui/devices';
 import { Queue } from '../../../../../ui/queue';
 import { Repeat } from '../../../../../ui/repeat';
 import { Shuffle } from '../../../../../ui/shuffle';
@@ -9,7 +10,7 @@ export const Controls: React.FC = () => (
     <Queue />
     <Shuffle />
     <Repeat />
-    <button>Devices</button>
+    <Devices />
     <div className="volume">Volume</div>
   </div>
 );
