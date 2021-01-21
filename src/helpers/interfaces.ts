@@ -51,3 +51,32 @@ export interface ITrack {
   album: IAlbum;
   artist: IArtist;
 }
+
+// artist interfaces
+
+export interface IPopularTracks {
+  title: string;
+  feat: Array<string> | null;
+  duration: number;
+  inMediaLibrary: number;
+  albumImage: string;
+  id: number;
+  inFavorites: boolean;
+}
+
+export interface ILatestRelease {
+  title: string;
+  date: string;
+  albumImage: string;
+  id: number;
+}
+
+export interface IMainArtist {
+  name: string;
+  verified: boolean;
+  listeners: number;
+  spotify: string;
+  photo: string;
+  latestRelease: ILatestRelease;
+  popularTracks: Array<IPopularTracks>;
+}
