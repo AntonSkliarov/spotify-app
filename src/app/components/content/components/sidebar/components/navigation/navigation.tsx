@@ -5,22 +5,24 @@ import userFixture from '../../../../../../../api/userFixture.json';
 
 const { user } = userFixture;
 
-export const Navigation: React.FC = () => (
-  <section className="navigation">
+export const Navigation: React.FC = () => {
+  return (
+    <section className="navigation">
 
-    <NavMenu
-      title={"main"}
-      user={user}
-    />
+      <NavMenu
+        title={"main"}
+        user={user}
+      />
 
-    <NavMenu
-      title={"your music"}
-      user={user}
-    />
+      <NavMenu
+        title={"your music"}
+        user={user}
+      />
 
-    <NavMenu
-      title={"playlists"}
-      user={user}
-    />
-  </section>
-);
+      <NavMenu
+        title={"playlists"}
+        user={user}
+      />
+    </section>
+  );
+};
