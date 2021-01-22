@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoIosMore } from 'react-icons/io';
 import { IoPlaySharp } from 'react-icons/io5';
 import './action-button.sass';
 
@@ -22,6 +23,26 @@ export const ActionButton: React.FC<IActionButtonProps> = ({ type }) => {
           </span>
 
           Play
+        </button>
+      );
+
+    case 'follow':
+      return (
+        <button
+          className="action-button action-button__follow"
+          type="button"
+        >
+          Follow
+        </button>
+      );
+
+    case 'more':
+      return (
+        <button
+          className="action-button action-button__more"
+          type="button"
+        >
+          <IoIosMore size={17}/>
         </button>
       );
 }

@@ -19,6 +19,8 @@ export const ArtistMeta: React.FC = () => {
 
       <div className="artist-meta__actions">
         <ActionButton type={'play'}/>
+        <ActionButton type={'follow'}/>
+        <ActionButton type={'more'}/>
       </div>
     </div>
   );
