@@ -45,6 +45,16 @@ export const ActionButton: React.FC<IActionButtonProps> = ({ type }) => {
           <IoIosMore size={17}/>
         </button>
       );
+
+    case 'save':
+      return (
+        <button
+          className="action-button action-button__save"
+          type="button"
+        >
+          Save
+        </button>
+      );
 }
 
   return (
