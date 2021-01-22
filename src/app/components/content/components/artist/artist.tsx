@@ -3,6 +3,7 @@ import './artist.sass';
 import { ArtistHeader } from './components/artist-header';
 import artistFixture from '../../../../../api/artistFixture.json';
 import { IMainArtist } from '../../../../../helpers/interfaces';
+// import { ArtistProvider } from './artist-provider';
 
 const artist: IMainArtist = artistFixture.artist;
 export const ArtistContext = React.createContext(artist);
