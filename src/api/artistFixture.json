@@ -114,6 +114,56 @@
         "id": 10,
         "inFavorites": true
       }
+    ],
+    "relatedArtists": [
+      {
+        "name": "Hoodie Allen",
+        "spotify": "https://open.spotify.com/artist/382aq8Pij5V2nE2JMHMoxl",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg",
+        "id": 1
+      },
+      {
+        "name": "Mike Stud",
+        "spotify": "https://open.spotify.com/artist/5G9kmDLg3OeUyj8KVBLzbu",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud_large.jpg",
+        "id": 2
+      },
+      {
+        "name": "Drake",
+        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake_large.jpg",
+        "id": 3
+      },
+      {
+        "name": "J. Cole",
+        "spotify": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole_large.jpg",
+        "id": 4
+      },
+      {
+        "name": "Big Sean",
+        "spotify": "https://open.spotify.com/artist/0c173mlxpT3dSFRgMO8XPh",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/bigSean_large.jpg",
+        "id": 5
+      },
+      {
+        "name": "Wiz Khalifa",
+        "spotify": "https://open.spotify.com/artist/137W8MRPWKqSmrBGDBFSop",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg",
+        "id": 6
+      },
+      {
+        "name": "Yonas",
+        "spotify": "https://open.spotify.com/artist/6gWsNpg9lhVbimwQ8bP5K1",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg",
+        "id": 7
+      },
+      {
+        "name": "Childish Gambino",
+        "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/childish.jpg",
+        "id": 8
+      }
     ]
   }
 }

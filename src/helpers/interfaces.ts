@@ -64,6 +64,13 @@ export interface IPopularTracks {
   inFavorites: boolean;
 }
 
+export interface IRelatedArtists {
+  name: string;
+  spotify: string;
+  image: string;
+  id: number;
+}
+
 export interface ILatestRelease {
   title: string;
   date: string;
@@ -79,6 +86,7 @@ export interface IMainArtist {
   photo: string;
   latestRelease: ILatestRelease;
   popularTracks: Array<IPopularTracks>;
+  relatedArtists: Array<IRelatedArtists>;
 }
 
 // artist interface
