@@ -3,6 +3,7 @@
     "name": "Nightcall",
     "duration": 257000,
     "inMediaLibrary": 179889627,
+    "inFavorites": true,
     "album": {
       "releaseDate": 2015,
       "name": "OutRun",

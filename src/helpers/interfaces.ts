@@ -48,6 +48,7 @@ export interface ITrack {
   name: string;
   duration: number;
   inMediaLibrary: number;
+  inFavorites: boolean;
   album: ICurrentTrackAlbum;
   artist: IArtist;
 }
