@@ -1,9 +1,10 @@
 import React from 'react';
+import { Tabs } from '../../../../../../../ui/tabs';
 import './artist-navigation.sass';
 
 export const ArtistNavigation: React.FC = () => (
   <div className="artist-navigation">
-    <div>Tabs</div>
+    <Tabs />
     <div>Friend</div>
   </div>
 );

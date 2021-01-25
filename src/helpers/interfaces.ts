@@ -81,7 +81,7 @@ export interface IMainArtist {
 }
 
 // artist interface
-export interface IOption {
+export interface ITab {
   value: string;
   label: string;
 }
@@ -100,4 +100,10 @@ export interface IAlbum {
   image: string;
   releaseDate: number;
   tracks: Array<IAlbumTrack>;
+}
+
+// highlighterStyle interface
+export interface IHighlighterStyle {
+  width: string;
+  transform: string;
 }
