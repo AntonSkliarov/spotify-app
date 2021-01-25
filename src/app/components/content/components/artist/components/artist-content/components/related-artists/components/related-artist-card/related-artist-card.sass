@@ -1,0 +1,44 @@
+@import '../../../../../../../../../../../helpers/_variables'
+
+.related-artist-card
+  padding: $padding-xs
+  margin-bottom: 2px
+
+  background: $light-black
+
+  @media screen and ( max-width: 1024px)
+    margin: $margin-sm
+    width: calc((100% / 3) - 20px)
+
+  @media screen and ( max-width: 1024px)
+    margin: $margin-xs
+    width: calc((100% / 2) - 10px)
+
+  @media screen and ( max-width: 480px)
+    margin: $margin-xs
+    width: 20%
+    background: none
+
+    &:hover
+      background: none
+      opacity: 0.6
+
+  &:hover
+    background: lighten($light-black , 6%)
+
+  &__link
+    display: flex
+    align-items: center
+
+    font-size: 14px
+
+  &__image
+    width: 42px
+    height: 42px
+
+    border-radius: 50%
+
+  &__name
+    margin-left: $margin
+
+    color: $white

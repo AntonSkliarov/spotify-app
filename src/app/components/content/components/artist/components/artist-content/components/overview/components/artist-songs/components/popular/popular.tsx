@@ -24,7 +24,7 @@ export const Popular: React.FC = () => {
         Popular
       </h3>
 
-      <ol className="popular__tracks">
+      <ul className="popular__tracks">
         {filteredTracks.map((track: IPopularTracks, index: number) => (
           <Track
             type={"popular"}
@@ -33,7 +33,7 @@ export const Popular: React.FC = () => {
             index={index}
           />
         ))}
-      </ol>
+      </ul>
 
       <ActionButton
         type={"5 more"}
