@@ -3,8 +3,10 @@ import { ArtistContext, IArtistContext } from '../../../../../../../../artist-pr
 import './popular.sass';
 import { IPopularTracks } from '../../../../../../../../../../../../../helpers/interfaces';
 import { Track } from '../../../track';
+import { ActionButton } from '../../../../../../../../../../../ui/action-button';
 
 export const Popular: React.FC = () => {
+  // const [visibleFullList, setVisibleFullList]
   const { artist } = useContext<IArtistContext>(ArtistContext);
   const { popularTracks } = artist;
 
@@ -25,7 +27,7 @@ export const Popular: React.FC = () => {
         ))}
       </ol>
 
-      <button>Show 5 more</button>
+      <ActionButton type={"5 more"} />
     </div>
   );
 };

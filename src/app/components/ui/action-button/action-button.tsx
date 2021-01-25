@@ -3,7 +3,7 @@ import { IoIosMore } from 'react-icons/io';
 import { IoPlaySharp } from 'react-icons/io5';
 import './action-button.sass';
 
-export type ActionButtonType = 'play' | 'follow' | 'more' | 'save' | 'find friends';
+export type ActionButtonType = 'play' | 'follow' | 'more' | 'save' | 'find friends' | '5 more';
 
 interface IActionButtonProps {
   type: ActionButtonType;
@@ -63,6 +63,16 @@ export const ActionButton: React.FC<IActionButtonProps> = ({ type }) => {
           type="button"
         >
           Find Friends
+        </button>
+      );
+
+    case '5 more':
+      return (
+        <button
+          className="action-button action-button__5-more"
+          type="button"
+        >
+          Show 5 more
         </button>
       );
 }
