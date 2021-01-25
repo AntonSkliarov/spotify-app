@@ -80,3 +80,14 @@ export interface IMainArtist {
   latestRelease: ILatestRelease;
   popularTracks: Array<IPopularTracks>;
 }
+
+// artist interface
+
+export interface IOption {
+  value: string;
+  label: string;
+}
+
+export interface IOptions {
+  options: Array<IOption>;
+}

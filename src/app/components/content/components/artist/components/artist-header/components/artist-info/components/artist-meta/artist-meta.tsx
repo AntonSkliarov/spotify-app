@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import './artist-meta.sass';
-import { ArtistContext } from '../../../../../../artist';
-import { IMainArtist } from '../../../../../../../../../../../helpers/interfaces';
+import { ArtistContext } from '../../../../../../artist-provider';
+import { IArtistContext } from '../../../../../../artist-provider';
 import { ActionButton } from '../../../../../../../../../ui/action-button';
 
 export const ArtistMeta: React.FC = () => {
-  const artist = useContext<IMainArtist>(ArtistContext);
+  const { artist } = useContext<IArtistContext>(ArtistContext);
 
   return (
     <div className="artist-meta">

@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { ArtistContext } from '../../../../artist';
+import { ArtistContext } from '../../../../artist-provider';
 import './artist-listeners.sass';
-import { IMainArtist } from '../../../../../../../../../helpers/interfaces';
+import { IArtistContext } from '../../../../artist-provider';
 import { FUNC } from '../../../../../../../../../helpers/_functions';
 
 export const ArtistListeners: React.FC = () => {
-  const artist = useContext<IMainArtist>(ArtistContext);
+  const { artist } = useContext<IArtistContext>(ArtistContext);
 
   return (
     <div className="artist-listeners">

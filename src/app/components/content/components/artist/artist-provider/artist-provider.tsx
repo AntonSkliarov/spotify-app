@@ -1,15 +1,25 @@
 import React from 'react';
 import artistFixture from '../../../../../../api/artistFixture.json';
-import { IMainArtist } from '../../../../../../helpers/interfaces';
+import { IMainArtist, IOptions } from '../../../../../../helpers/interfaces';
+import options from '../../../../../../options/options.json';
 
-const artist: IMainArtist = artistFixture.artist;
+const artist = artistFixture.artist;
 
-export const ArtistContext = React.createContext(artist);
+export interface IArtistContext {
+  artist: IMainArtist;
+  options: IOptions;
+}
+
+
+export const ArtistContext = React.createContext<IArtistContext>({
+  artist,
+  options});
 
 export const ArtistProvider: React.FC = ({ children }) => {
 
   const contextValue = {
     artist,
+    options,
   };
 
   return (

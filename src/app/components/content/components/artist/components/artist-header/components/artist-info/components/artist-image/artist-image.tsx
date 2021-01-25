@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import './artist-image.sass';
-import { ArtistContext } from '../../../../../../artist';
-import { IMainArtist } from '../../../../../../../../../../../helpers/interfaces';
+import { ArtistContext } from '../../../../../../artist-provider';
+import { IArtistContext } from '../../../../../../artist-provider';  
 import { HiCheck } from "react-icons/hi";
 
 export const ArtistImage: React.FC = () => {
-  const artist = useContext<IMainArtist>(ArtistContext);
+  const { artist } = useContext<IArtistContext>(ArtistContext);
 
   return (
     <div className="artist-image">
