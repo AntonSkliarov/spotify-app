@@ -31,8 +31,8 @@ export interface IUser {
   playlists: Array<IPlaylist>;
 }
 
-// track interfaces
-export interface IAlbum {
+// current track interfaces
+export interface ICurrentTrackAlbum {
   releaseDate: number;
   name: string;
   image: string;
@@ -48,12 +48,11 @@ export interface ITrack {
   name: string;
   duration: number;
   inMediaLibrary: number;
-  album: IAlbum;
+  album: ICurrentTrackAlbum;
   artist: IArtist;
 }
 
 // artist interfaces
-
 export interface IPopularTracks {
   title: string;
   feat: Array<string> | null;
@@ -82,12 +81,23 @@ export interface IMainArtist {
 }
 
 // artist interface
-
 export interface IOption {
   value: string;
   label: string;
 }
 
-export interface IOptions {
-  options: Array<IOption>;
+// album interfaces
+export interface IAlbumTrack {
+  title: string;
+  feat: Array<string> | null;
+  duration: number;
+  id: number;
+  inFavorites: boolean;
+}
+
+export interface IAlbum {
+  name: string;
+  image: string;
+  releaseDate: number;
+  tracks: Array<IAlbumTrack>;
 }

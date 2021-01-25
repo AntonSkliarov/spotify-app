@@ -8,5 +8,6 @@
       "value": "Related Artists",
       "label": "Related Artists"
     }
-  ]
+  ],
+  "defaultTabs": true
 }
