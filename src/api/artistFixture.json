@@ -7,8 +7,8 @@
     "photo": "https://bit.ly/3p6ewXg",
     "latestRelease": {
         "title": "Drifting (Track Commentary)",
-        "date": "4 december 2015",
-        "albumImage": "https://bit.ly/2NoN8WF",
+        "date": "4 December 2015",
+        "albumImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg",
         "id": 1
     },
     "popularTracks": [
@@ -17,7 +17,7 @@
         "feat": ["Tory Lanez", "Tyga"],
         "duration": 213000,
         "inMediaLibrary": 155374010,
-        "albumImage": "https://bit.ly/2NoN8WF",
+        "albumImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg",
         "id": 1,
         "inFavorites": true
       },

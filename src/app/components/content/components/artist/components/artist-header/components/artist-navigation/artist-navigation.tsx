@@ -5,6 +5,5 @@ import './artist-navigation.sass';
 export const ArtistNavigation: React.FC = () => (
   <div className="artist-navigation">
     <Tabs />
-    <div>Friend</div>
   </div>
 );
