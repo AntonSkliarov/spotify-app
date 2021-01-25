@@ -7,9 +7,15 @@ export type ActionButtonType = 'play' | 'follow' | 'more' | 'save' | 'find frien
 
 interface IActionButtonProps {
   type: ActionButtonType;
+  onClick?: () => void; 
+  visibleFullList?: boolean;
 }
 
-export const ActionButton: React.FC<IActionButtonProps> = ({ type }) => {
+export const ActionButton: React.FC<IActionButtonProps> = ({
+  type,
+  onClick,
+  visibleFullList
+}) => {
 
   switch (type) {
     case 'play':
@@ -71,8 +77,9 @@ export const ActionButton: React.FC<IActionButtonProps> = ({ type }) => {
         <button
           className="action-button action-button__5-more"
           type="button"
+          onClick={onClick}
         >
-          Show 5 more
+          {visibleFullList ? 'Hide': 'Show 5 more'}
         </button>
       );
 }

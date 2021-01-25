@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ArtistContext, IArtistContext } from '../../../../../../../../artist-provider';
 import './popular.sass';
 import { IPopularTracks } from '../../../../../../../../../../../../../helpers/interfaces';
@@ -6,9 +6,17 @@ import { Track } from '../../../track';
 import { ActionButton } from '../../../../../../../../../../../ui/action-button';
 
 export const Popular: React.FC = () => {
-  // const [visibleFullList, setVisibleFullList]
+  const [visibleFullList, setVisibleFullList] = useState<boolean>(false);
   const { artist } = useContext<IArtistContext>(ArtistContext);
   const { popularTracks } = artist;
+
+  const handleShowFullList = (): void => {
+    setVisibleFullList(!visibleFullList);
+  };
+
+  const filteredTracks = popularTracks.filter((track: IPopularTracks, index: number) => {
+    return visibleFullList ? index < 10 : index < 5 ;
+  });
 
   return (
     <div className="popular">
@@ -17,7 +25,7 @@ export const Popular: React.FC = () => {
       </h3>
 
       <ol className="popular__tracks">
-        {popularTracks.map((track: IPopularTracks, index: number) => (
+        {filteredTracks.map((track: IPopularTracks, index: number) => (
           <Track
             type={"popular"}
             key={track.id}
@@ -27,7 +35,11 @@ export const Popular: React.FC = () => {
         ))}
       </ol>
 
-      <ActionButton type={"5 more"} />
+      <ActionButton
+        type={"5 more"}
+        onClick={handleShowFullList}
+        visibleFullList={visibleFullList}
+      />
     </div>
   );
 };
