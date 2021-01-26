@@ -2,6 +2,7 @@ import React from 'react';
 import './artist-album.sass';
 import albumFixture from '../../../../../../../../../../../../../api/albumFixture.json';
 import { ActionButton } from '../../../../../../../../../../../ui/action-button';
+import { AlbumTracks } from './components/album-tracks';
 
 const { album } = albumFixture;
 
@@ -33,6 +34,8 @@ export const ArtistAlbum: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <AlbumTracks tracks={album.tracks}/>
     </div>
   );
 };

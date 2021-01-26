@@ -4,8 +4,9 @@ import { IPopularTracks } from '../../../../../../../../../../../helpers/interfa
 import { AddToFavButton } from '../../../../../../../../../ui/add-to-fav-button';
 import { Explicit } from '../../../../../../../../../ui/explicit';
 import { FUNC } from '../../../../../../../../../../../helpers/_functions';
+import { IoMdTrendingUp, IoMdTrendingDown } from 'react-icons/io';
 
-type TrackType = 'popular' | 'albums';
+type TrackType = 'popular' | 'album';
 
 export interface ITrackProps {
   type: TrackType;
@@ -49,6 +50,48 @@ export const Track: React.FC<ITrackProps> = ({
           <div className="track__in-media-library">
             {FUNC.numberWithCommas(track.inMediaLibrary)}
           </div>
+        </li>
+      );
+    
+    case 'album':
+      return (
+        <li className="track album-track">
+          <div className="track__number">
+            {index + 1}
+          </div>
+
+          <div className="track__inFavorites">
+            <AddToFavButton inFavorites={track.inFavorites} />
+          </div>
+
+          <div className="track__title">
+            {!track.feat
+              ? track.title
+              : (
+                <>
+                  {`${track.title} - `}
+                  <span className="track__title-feat">
+                    {track.feat}
+                  </span>
+                </>
+              )}
+          </div>
+
+          <div className="album-track__explicit">
+            <Explicit />
+          </div>
+
+          <div className="track__duration album-track__duration">
+            {FUNC.msToMinAndSec(track.duration)}
+          </div>
+
+          <div className="track__popularity album-track__popularity">
+            {track.inFavorites
+              ? <IoMdTrendingUp />
+              : <IoMdTrendingDown />
+            }
+          </div>
+
         </li>
       );
   }

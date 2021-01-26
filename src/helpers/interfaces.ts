@@ -100,6 +100,8 @@ export interface IAlbumTrack {
   title: string;
   feat: Array<string> | null;
   duration: number;
+  inMediaLibrary: number;
+  albumImage: string;
   id: number;
   inFavorites: boolean;
 }
