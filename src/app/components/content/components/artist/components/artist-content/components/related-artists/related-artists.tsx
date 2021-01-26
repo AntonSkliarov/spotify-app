@@ -14,20 +14,40 @@ export const RelatedArtists: React.FC<IRelatedArtistsProps> = ({ type }) => {
   const { artist } = useContext<IArtistContext>(ArtistContext);
   const { relatedArtists } = artist;
 
-  return (
-    <div className="related-artists">
-      <h3 className="related-artists__title">Related Artists</h3>
+  switch (type) {
+    case 'small':
+      return (
+        <div className="related-artists">
+          <h3 className="related-artists__title">Related Artists</h3>
 
-      <ul className="related-artists__list">
-        {relatedArtists.map((artist: IRelatedArtists) => (
-          <RelatedArtistCard
-            key={artist.id}
-            artist={artist}
-            type={type}
-          />
-        ))}
+          <ul className="related-artists__list">
+            {relatedArtists.map((artist: IRelatedArtists) => (
+              <RelatedArtistCard
+                key={artist.id}
+                artist={artist}
+                type={type}
+              />
+            ))}
 
-      </ul>
-    </div>
-  );
+          </ul>
+        </div>
+      );
+
+    case 'large':
+      return (
+        <div className="related-artists related-artists_large">
+
+          <ul className="related-artists__list related-artists__list_large">
+            {relatedArtists.map((artist: IRelatedArtists) => (
+              <RelatedArtistCard
+                key={artist.id}
+                artist={artist}
+                type={type}
+              />
+            ))}
+
+          </ul>
+        </div>
+      );
+  }
 };

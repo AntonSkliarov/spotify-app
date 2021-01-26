@@ -1,7 +1,8 @@
 import React from 'react';
-import classNames from 'classnames';
+import CSS from 'csstype';
 import './related-artist-card.sass';
 import { IRelatedArtists } from '../../../../../../../../../../../helpers/interfaces';
+import { IoIosPlay } from 'react-icons/io';
 
 type RelatedArtistsCardType = 'small' | 'large';
 
@@ -14,14 +15,14 @@ export const RelatedArtistCard: React.FC<IRelatedArtistCardProps> = ({
   artist,
   type
 }) => {
+  const imgStyles: CSS.Properties = {
+    backgroundImage: `url(${artist.image})`
+  };
+
   switch (type) {
     case 'small':
       return (
-        <li
-          className={classNames('related-artist-card', {
-            'related-artist-card_small': type === 'small',
-          })}
-        >
+        <li className="related-artist-card related-artist-card_small">
           <a className="related-artist-card__link" href={artist.spotify}>
             <span>
               <img
@@ -38,7 +39,29 @@ export const RelatedArtistCard: React.FC<IRelatedArtistCardProps> = ({
           </a>
         </li>
       );
+
     case 'large':
-      return null;
+      return (
+        <li className="related-artist-card related-artist-card_large">
+          <div
+            className="related-artist-card__image-container"
+            style={imgStyles}
+          >
+
+            <span className="related-artist-card__icon">
+              <IoIosPlay size={70} />
+            </span>
+          </div>
+
+          <a
+            className="related-artist-card__link related-artist-card__link_large"
+            href={artist.spotify}
+          >
+            <span className="related-artist-card__name related-artist-card__name_large">
+              {artist.name}
+            </span>
+          </a>
+        </li>
+      );
   }
 };

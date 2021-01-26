@@ -6,22 +6,10 @@
 
   background: $light-black
 
-  @media screen and ( max-width: 1024px)
-    margin: $margin-sm
-    width: calc((100% / 3) - 20px)
-
-  @media screen and ( max-width: 1024px)
-    margin: $margin-xs
-    width: calc((100% / 2) - 10px)
-
-  @media screen and ( max-width: 480px)
-    margin: $margin-xs
-    width: 20%
-    background: none
-
-    &:hover
-      background: none
-      opacity: 0.6
+  &_large
+    margin: $margin
+    padding: 0
+    max-width: 250px
 
   &:hover
     background: lighten($light-black , 6%)
@@ -32,13 +20,55 @@
 
     font-size: 14px
 
+    &_large
+      display: block
+
+      padding: $padding
+
+      background: $light-black
+      color: $white
+
+      &:hover
+        text-decoration: underline
+
+        cursor: pointer
+
   &__image
     width: 42px
     height: 42px
 
     border-radius: 50%
 
+  &__image-container
+    display: flex
+    align-items: center
+
+    height: 200px
+
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    &:hover .related-artist-card__icon
+      opacity: 1
+      transition: opacity $hover-transition-duration ease
+
   &__name
     margin-left: $margin
 
     color: $white
+
+    &_large
+      margin: 0
+
+  &__icon
+    color: $white
+
+    margin: 0 auto
+    opacity: 0
+    transition: opacity $hover-transition-duration ease
+    text-shadow: 1px 5px 15px $black
+    filter: drop-shadow(0 0 0.75rem black)
+
+    &:hover
+      cursor: pointer
