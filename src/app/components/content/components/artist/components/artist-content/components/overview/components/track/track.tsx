@@ -77,7 +77,7 @@ export const Track: React.FC<ITrackProps> = ({
               )}
           </div>
 
-          <div className="album-track__explicit">
+          <div className="track__explicit album-track__explicit">
             <Explicit />
           </div>
 

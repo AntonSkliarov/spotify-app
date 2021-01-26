@@ -36,7 +36,10 @@
 
     color: $white
     font-size: 14px
-  
+
+    @media screen and ( max-width: 1200px)
+      width: auto
+
   &__title-feat
     color: $grey
 
@@ -52,6 +55,13 @@
     color: $grey
     font-size: 14px
 
+    @media screen and ( max-width: 1200px)
+      margin-left: auto
+
+  &__explicit
+    @media screen and ( max-width: 1200px)
+      display: none
+
   &__in-media-library
     margin-left: auto
     padding-right: $padding-sm
@@ -65,6 +75,9 @@
 
     font-size: $large
     color: $grey
+
+    @media screen and ( max-width: 1200px)
+      display: none
 
 .album-track
   &__explicit

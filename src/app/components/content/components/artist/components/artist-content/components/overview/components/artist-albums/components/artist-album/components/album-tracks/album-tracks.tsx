@@ -9,7 +9,6 @@ interface IAlbumTracksProps {
 }
 
 export const AlbumTracks: React.FC<IAlbumTracksProps> = ({ tracks }) => {
-  console.log(tracks);
   return (
     <div className="album-tracks">
       <ul className="album-tracks__list">
