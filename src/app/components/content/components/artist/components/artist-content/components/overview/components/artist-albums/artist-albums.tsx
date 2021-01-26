@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ViewType } from '../../../../../../../../../ui/view-type';
 import './artist-albums.sass';
+import { ArtistAlbum } from './components/artist-album';
 
 export const ArtistAlbums: React.FC = () => {
   const [viewFilter, setViewFilter] = useState<string>('list');
@@ -31,7 +32,7 @@ export const ArtistAlbums: React.FC = () => {
 
       </div>
 
-      <div>Artist Album</div>
+      <ArtistAlbum />
     </div>
   );
 };
