@@ -25,11 +25,17 @@
 
     color: $grey
 
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-xs
+
   &__inFavorites
     margin-left: $margin * 2
     padding: 0
 
     color: $sand
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-sm
 
   &__title
     width: 45%
@@ -40,6 +46,11 @@
 
     @media screen and ( max-width: 1200px)
       width: auto
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin
+
+      font-size: 12px
 
   &__title-feat
     color: $grey
@@ -69,6 +80,9 @@
 
     color: $grey
     font-size: 14px
+
+    @media screen and ( max-width: 400px)
+      display: none
 
   &__popularity
     margin-left: 50px

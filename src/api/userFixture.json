@@ -1,9 +1,9 @@
 {
   "user": {
-    "firstName": "Adam",
-    "lastName": "Lowenthal",
+    "firstName": "Gerald",
+    "lastName": "Gillum",
     "id": 1,
-    "photo": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg",
+    "photo": "https://bit.ly/3iVz6HB",
     "friends": [
       {
         "firstName": "Sam",
