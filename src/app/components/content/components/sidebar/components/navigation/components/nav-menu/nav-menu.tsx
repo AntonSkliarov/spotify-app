@@ -22,7 +22,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ title, user }) => {
     }
 
     if (windowWidth > 768 && !menuOpen) {
-      return;
+      setMenuOpen(true);
     }
   }, [windowWidth]);
 
