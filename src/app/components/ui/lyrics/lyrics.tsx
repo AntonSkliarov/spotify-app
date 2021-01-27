@@ -14,7 +14,7 @@ export const Lyrics: React.FC = () => {
       className={classNames(`lyrics`, {
         'lyrics_active': isActive,
       })}
-      href="#"
+      href="/"
       onClick={onClick}
     >
       Lyrics

@@ -39,7 +39,7 @@ export const MenuList: React.FC<MenuListProps> = ({
         {user[title].map((item: MenuListItemType, index: number) => (
           <li className="menu-list__item" key={item.id}>
 
-            <a className="menu-list__link" href="#">
+            <a className="menu-list__link" href="/">
               <span className="menu-list__icon">
                 {ICONS[title][index].icon}
               </span>

@@ -19,7 +19,6 @@ export const Tabs: React.FC = () => {
             key={tab.value}
             tab={tab}
             currentTab={currentTab}
-            // render={render}
           />
         ))}
       </ul>

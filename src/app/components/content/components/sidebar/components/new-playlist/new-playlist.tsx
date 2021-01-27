@@ -4,7 +4,7 @@ import './new-playlist.sass';
 
 export const NewPlaylist: React.FC = () => (
   <section className="new-playlist">
-    <a className="new-playlist__link" href="#">
+    <a className="new-playlist__link" href="/">
 
       <span className="new-playlist__icon">
         <IoAddCircleOutline size={25}/>
