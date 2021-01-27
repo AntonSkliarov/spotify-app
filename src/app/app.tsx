@@ -3,11 +3,12 @@ import { Header } from './components/header';
 import { Content } from './components/content';
 import './app.sass';
 import { CurrentTrack } from './components/current-track';
-import { useWindowHeight } from '../helpers/_custom-hooks';
+import { useWindowHeight, useWindowWidth } from '../helpers/_custom-hooks';
 import { FUNC } from '../helpers/_functions';
 
 export const App: React.FC = () => {
   const totalHeight = useWindowHeight();
+  const totalWidth = useWindowWidth();
 
   useEffect((): void => {
     const handleResize = (): void => {
@@ -23,13 +24,18 @@ export const App: React.FC = () => {
 
       const artistHeight: HeightType = totalHeight - (headerHeight + footerHeight);
 
-      FUNC.resizeElement('.navigation', navigationHeight);
+      if (totalWidth <= 768) {
+        FUNC.resizeElement('.navigation', 'auto');
+      } else {
+        FUNC.resizeElement('.navigation', navigationHeight);
+      }
+
       FUNC.resizeElement('.artist', artistHeight);
       FUNC.resizeElement('.social', artistHeight);
     };
 
     handleResize();
-  }, [totalHeight]);
+  }, [totalHeight, totalWidth]);
 
   return (
     <>

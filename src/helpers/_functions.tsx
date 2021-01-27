@@ -7,7 +7,7 @@ interface IFunc {
   calcTransform: (tabs: TabsType, activeTab: ITab) => number;
   calcHighlighterStyle: (tabs: TabsType, activeTab: ITab) => IHighlighterStyle;
   getElementHeight: (className: string) => number;
-  resizeElement: (className: string, newHeight: number) => void;
+  resizeElement: (className: string, newHeight: number | string) => void;
 }
 
 export const FUNC: IFunc = {
@@ -45,13 +45,17 @@ export const FUNC: IFunc = {
     return element.getBoundingClientRect().height;
   },
 
-  resizeElement: (className: string, newHeight: number): void => {
-    const navigationEl = document.querySelector<HTMLElement>(className);
+  resizeElement: (className: string, newHeight: number | string): void => {
+    const element = document.querySelector<HTMLElement>(className);
 
-    if (navigationEl === null) {
+    if (element === null) {
       throw new Error(`Element is null, check the Class name ${className}`);
     }
 
-    navigationEl.style.height = `${newHeight}px`;
+    if (typeof newHeight === 'string') {
+      element.style.height = newHeight;
+    }
+
+    element.style.height = `${newHeight}px`;
   }
 };
