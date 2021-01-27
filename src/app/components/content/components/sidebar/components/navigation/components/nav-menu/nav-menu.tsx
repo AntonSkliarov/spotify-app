@@ -40,10 +40,13 @@ export const NavMenu: React.FC<NavMenuProps> = ({ title, user }) => {
 
         {title}
 
-        {menuOpen
-          ? <IoChevronDown />
-          : <IoChevronUp />
-        }
+        <span className="nav-menu__button-icon">
+          {menuOpen
+            ? <IoChevronDown size={15} />
+            : <IoChevronUp size={15}/>
+          }
+        </span>
+
       </button>
 
       <MenuList
