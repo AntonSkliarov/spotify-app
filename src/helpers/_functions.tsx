@@ -6,6 +6,7 @@ interface IFunc {
   numberWithCommas: (args: number) => string;
   calcTransform: (tabs: TabsType, activeTab: ITab) => number;
   calcHighlighterStyle: (tabs: TabsType, activeTab: ITab) => IHighlighterStyle;
+  getElementHeight: (className: string) => number;
 }
 
 export const FUNC: IFunc = {
@@ -31,5 +32,15 @@ export const FUNC: IFunc = {
       width: `calc(100% / ${tabs.length}`,
       transform: `translate(${FUNC.calcTransform(tabs, activeTab)}%, 0)`
     };
+  },
+
+  getElementHeight: (className: string): number => {
+    const element = document.querySelector<HTMLElement>(className);
+
+    if (element === null) {
+      throw new Error(`Element is null, check the Class name ${className}`);
+    }
+
+    return element.getBoundingClientRect().height;
   }
 };
