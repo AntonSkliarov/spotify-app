@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoChevronDown, IoChevronUp } from 'react-icons/io5';
 import './nav-menu.sass';
 import { IUser } from '../../../../../../../../../helpers/interfaces';
 import { MenuList } from './components';
+import { useWindowWidth } from '../../../../../../../../../helpers/_custom-hooks';
 
 export type NavMenuTitleType = 'main' | 'your music' | 'playlists';
 
@@ -13,6 +14,15 @@ export interface NavMenuProps {
 
 export const NavMenu: React.FC<NavMenuProps> = ({ title, user }) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(true);
+  const windowWidth = useWindowWidth();
+
+  useEffect((): void => {
+    console.log(windowWidth);
+
+    if (windowWidth < 768) {
+      setMenuOpen(false);
+    }
+  }, []);
 
   const onClick = (): void => {
     setMenuOpen(!menuOpen);

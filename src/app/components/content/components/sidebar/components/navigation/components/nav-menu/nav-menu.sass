@@ -3,7 +3,14 @@
 .nav-menu
   display: flex
   flex-flow: column wrap
+
   margin-bottom: $margin
+
+  @media screen and ( max-width: 768px)
+    margin-bottom: 0
+    width: calc( 100% / 3 )
+
+    text-align: center
 
   &__button
     display: inline-block
@@ -21,3 +28,6 @@
     background: none
 
     cursor: pointer
+
+    @media screen and ( max-width: 768px)
+      margin: 0 auto

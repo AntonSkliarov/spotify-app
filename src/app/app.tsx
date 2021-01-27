@@ -3,11 +3,11 @@ import { Header } from './components/header';
 import { Content } from './components/content';
 import './app.sass';
 import { CurrentTrack } from './components/current-track';
-import { useWindowSize } from '../helpers/_custom-hooks';
+import { useWindowHeight } from '../helpers/_custom-hooks';
 import { FUNC } from '../helpers/_functions';
 
 export const App: React.FC = () => {
-  const totalHeight = useWindowSize();
+  const totalHeight = useWindowHeight();
 
   useEffect((): void => {
     const handleResize = (): void => {

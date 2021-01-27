@@ -4,6 +4,12 @@
   overflow: hidden
   transition: height 0.5s ease-in-out
 
+  &__item
+    @media screen and ( max-width: 768px)
+      width: 100%
+      
+      text-align: center
+
   &__link
     display: flex
     flex-flow: row nowrap
@@ -21,5 +27,16 @@
 
       border-right: 3px solid $green
 
+    @media screen and ( max-width: 768px)
+      &:hover
+        border: none
+
   &__icon
     margin-right: $margin-sm
+
+    @media screen and ( max-width: 768px)
+      display: none
+
+  &__title
+    @media screen and ( max-width: 768px)
+      margin: 0 auto

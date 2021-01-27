@@ -55,14 +55,3 @@ export const FUNC: IFunc = {
     navigationEl.style.height = `${newHeight}px`;
   }
 };
-
-// const resizeElement = (className: string, newHeight: number): void => {
-//   const navigationEl = document.querySelector<HTMLElement>(className);
-
-//   if (navigationEl === null) {
-//     throw new Error(`Element is null, check the Class name ${className}`);
-//   }
-
-//   navigationEl.style.height = `${newHeight}px`;
-// }
-
