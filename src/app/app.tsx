@@ -30,7 +30,12 @@ export const App: React.FC = () => {
         FUNC.resizeElement('.navigation', navigationHeight);
       }
 
-      FUNC.resizeElement('.artist', artistHeight);
+      if (totalWidth <= 768) {
+        FUNC.resizeElement('.artist', 'auto');
+      } else {
+        FUNC.resizeElement('.artist', artistHeight);
+      }
+
       FUNC.resizeElement('.social', artistHeight);
     };
 

@@ -2,11 +2,12 @@
 
 .navigation
   padding: $padding
-  overflow-y: scroll
 
   color: $grey
 
   background: $light-black
+
+  overflow-y: scroll
 
   @media screen and ( max-width: 768px)
     display: flex
@@ -14,10 +15,3 @@
     justify-content: space-around
 
     height: auto
-
-  &::-webkit-scrollbar
-    width: 8px
-
-  &::-webkit-scrollbar-thumb
-    border-radius: 4px
-    background: $medium-light-black
