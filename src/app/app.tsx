@@ -23,23 +23,9 @@ export const App: React.FC = () => {
 
       const artistHeight: HeightType = totalHeight - (headerHeight + footerHeight);
 
-      const navigationEl = document.querySelector<HTMLElement>('.navigation');
-
-      if (navigationEl !== null) {
-        navigationEl.style.height = `${navigationHeight}px`;
-      }
-
-      const artistEl = document.querySelector<HTMLElement>('.artist');
-
-      if (artistEl !== null) {
-        artistEl.style.height = `${artistHeight}px`;
-      }
-
-      const socialEl = document.querySelector<HTMLElement>('.social');
-
-      if (socialEl !== null) {
-        socialEl.style.height = `${artistHeight}px`;
-      }
+      FUNC.resizeElement('.navigation', navigationHeight);
+      FUNC.resizeElement('.artist', artistHeight);
+      FUNC.resizeElement('.social', artistHeight);
     };
 
     handleResize();
