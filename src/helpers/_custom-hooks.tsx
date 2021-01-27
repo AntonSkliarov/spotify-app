@@ -19,7 +19,7 @@ export const useWindowWidth = (): number => {
 
   useEffect((): void => {
     const handleSetHeight = () => {
-      setWindowWidth(window.innerHeight);
+      setWindowWidth(window.innerWidth);
     };
 
     window.addEventListener('resize', handleSetHeight);

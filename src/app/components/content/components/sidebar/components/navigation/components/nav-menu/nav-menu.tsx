@@ -17,12 +17,14 @@ export const NavMenu: React.FC<NavMenuProps> = ({ title, user }) => {
   const windowWidth = useWindowWidth();
 
   useEffect((): void => {
-    console.log(windowWidth);
-
-    if (windowWidth < 768) {
+    if (windowWidth <= 768) {
       setMenuOpen(false);
     }
-  }, []);
+
+    if (windowWidth > 768 && !menuOpen) {
+      return;
+    }
+  }, [windowWidth]);
 
   const onClick = (): void => {
     setMenuOpen(!menuOpen);
