@@ -3,6 +3,10 @@
 .search
   margin-left: 1%
 
+  @media screen and ( max-width: 650px)
+    width: 65%
+    margin: 0
+
   &__input
     padding-left: $padding-lg
 
@@ -16,3 +20,8 @@
     background-repeat: no-repeat
     background-size: 10%
     background-position: 5px
+
+    @media screen and ( max-width: 650px)
+      width: 100%
+
+      background-size: 6%
