@@ -32,7 +32,7 @@ export const RelatedArtistCard: React.FC<IRelatedArtistCardProps> = ({
               />
             </span>
 
-            <span className="related-artist-card__name">
+            <span className="related-artist-card__name related-artist-card__name_small">
               {artist.name}
             </span>
 

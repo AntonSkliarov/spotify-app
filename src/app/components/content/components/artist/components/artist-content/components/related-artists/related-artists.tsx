@@ -17,10 +17,10 @@ export const RelatedArtists: React.FC<IRelatedArtistsProps> = ({ type }) => {
   switch (type) {
     case 'small':
       return (
-        <div className="related-artists">
+        <div className="related-artists related-artists_small">
           <h3 className="related-artists__title">Related Artists</h3>
 
-          <ul className="related-artists__list">
+          <ul className="related-artists__list related-artists__list_small">
             {relatedArtists.map((artist: IRelatedArtists) => (
               <RelatedArtistCard
                 key={artist.id}
