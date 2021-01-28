@@ -28,6 +28,7 @@ export const ViewType: React.FC<IViewTypeProps> = ({
           })}
           type="button"
           onClick={() => onClick(type)}
+          title='List type'
         >
           <VscListUnordered size={20}/>
         </button>
@@ -41,6 +42,7 @@ export const ViewType: React.FC<IViewTypeProps> = ({
           })}
           type="button"
           onClick={() => onClick(type)}
+          title='Cards type'
         >
           <AiFillAppstore size={20} />
         </button>

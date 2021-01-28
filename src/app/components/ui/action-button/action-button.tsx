@@ -47,6 +47,7 @@ export const ActionButton: React.FC<IActionButtonProps> = ({
         <button
           className="action-button action-button__more"
           type="button"
+          title='More'
         >
           <IoIosMore size={17}/>
         </button>
@@ -82,11 +83,12 @@ export const ActionButton: React.FC<IActionButtonProps> = ({
           {visibleFullList ? 'Hide': 'Show 5 more'}
         </button>
       );
-}
-
-  return (
-    <button type="button">
-      Action
-    </button>
-  );
+    
+    default:
+      return (
+        <button type="button" className="action-button">
+          Action
+        </button>
+      );
+  }
 };

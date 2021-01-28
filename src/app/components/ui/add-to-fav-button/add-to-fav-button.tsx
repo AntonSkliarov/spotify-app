@@ -33,6 +33,7 @@ export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites, type })
       type="button"
       onClick={onClick}
       style={iconStyles}
+      title={addedToFavorites ? 'Added to favorites' : 'Add to favorites'}
     >
       {addedToFavorites
         ? <GoCheck size={20}/>

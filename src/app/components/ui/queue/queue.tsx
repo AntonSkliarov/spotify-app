@@ -16,6 +16,7 @@ export const Queue: React.FC = () => {
         'queue_active': isActive,
       })}
       onClick={onClick}
+      title="Queue"
     >
       <RiPlayList2Fill />
     </button>

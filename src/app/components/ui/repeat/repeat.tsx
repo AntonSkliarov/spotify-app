@@ -16,6 +16,7 @@ export const Repeat: React.FC = () => {
         'repeat_active': isActive,
       })}
       onClick={onClick}
+      title="Repeat"
     >
       <IoRepeat size={20} />
     </button>

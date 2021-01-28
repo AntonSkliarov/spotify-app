@@ -17,6 +17,7 @@ export const Shuffle: React.FC = () => {
         'shuffle_active': isActive,
       })}
       onClick={onClick}
+      title='Shuffle'
     >
       <ImShuffle />
     </button>
