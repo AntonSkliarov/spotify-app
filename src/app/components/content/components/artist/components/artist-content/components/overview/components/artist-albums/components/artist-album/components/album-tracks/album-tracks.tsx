@@ -21,11 +21,11 @@ export const AlbumTracks: React.FC<IAlbumTracksProps> = ({ tracks }) => {
             Song
           </div>
 
-          <div className="album-tracks__header-duration">
+          <div className="album-tracks__header-duration" title="Duration">
             <IoMdStopwatch />
           </div>
 
-          <div className="album-tracks__header-popularity">
+          <div className="album-tracks__header-popularity" title="Popularity">
             <IoIosThumbsUp />
           </div>
         </div>
