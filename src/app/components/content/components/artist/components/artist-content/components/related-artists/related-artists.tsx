@@ -49,5 +49,12 @@ export const RelatedArtists: React.FC<IRelatedArtistsProps> = ({ type }) => {
           </ul>
         </div>
       );
+    
+    default:
+      return (
+        <div className="related-artists">
+          No related artists
+        </div>
+      );
   }
 };

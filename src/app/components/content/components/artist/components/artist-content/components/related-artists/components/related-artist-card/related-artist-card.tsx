@@ -63,5 +63,8 @@ export const RelatedArtistCard: React.FC<IRelatedArtistCardProps> = ({
           </a>
         </li>
       );
+
+    default:
+      return null;
   }
 };

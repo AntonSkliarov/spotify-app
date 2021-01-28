@@ -85,10 +85,6 @@ export const ActionButton: React.FC<IActionButtonProps> = ({
       );
     
     default:
-      return (
-        <button type="button" className="action-button">
-          Action
-        </button>
-      );
+      return null;
   }
 };

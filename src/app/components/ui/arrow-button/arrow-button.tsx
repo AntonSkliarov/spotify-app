@@ -74,13 +74,6 @@ export const ArrowButton: React.FC<IArrowButtonProps> = ({
       );
 
     default:
-      return (
-        <button
-          type="button"
-          className="arrow-button"
-        >
-          <IoChevronForward size={25} />
-        </button>
-      );
+      return null;
   }
 };

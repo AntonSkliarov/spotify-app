@@ -94,9 +94,23 @@ export const Track: React.FC<ITrackProps> = ({
 
         </li>
       );
-  }
 
-  return (
-    <div>Track</div>
-  );
+    default:
+      return (
+        <li className="track">
+          <div className="track__image-container">
+            <img
+              className="track__image"
+              src={track.albumImage}
+              alt={track.title}
+            />
+          </div>
+
+          <div className="track__title">
+            {track.title}
+          </div>
+
+        </li>
+      );
+  }
 };
