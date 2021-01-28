@@ -26,13 +26,9 @@ export const App: React.FC = () => {
 
       if (totalWidth <= 768) {
         FUNC.resizeElement('.navigation', 'auto');
-      } else {
-        FUNC.resizeElement('.navigation', navigationHeight);
-      }
-
-      if (totalWidth <= 768) {
         FUNC.resizeElement('.artist', 'auto');
       } else {
+        FUNC.resizeElement('.navigation', navigationHeight);
         FUNC.resizeElement('.artist', artistHeight);
       }
 

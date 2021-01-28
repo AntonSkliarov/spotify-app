@@ -2,11 +2,11 @@ import React from 'react';
 import './user-info.sass';
 import { IUser } from '../../../../../../../helpers/interfaces';
 
-interface UserInfoProps {
+interface IUserInfoProps {
   user: IUser,
 }
 
-export const UserInfo: React.FC<UserInfoProps> = ({ user }) => (
+export const UserInfo: React.FC<IUserInfoProps> = ({ user }) => (
   <div className="user-info">
     <div className="user-info__img-container">
       <img

@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import './menu-list.sass';
-import { NavMenuProps } from '../nav-menu';
+import { INavMenuProps } from '../nav-menu';
 import { IPlaylist, IMain, IYourMusic } from '../../../../../../../../../../helpers/interfaces';
 import { ICONS } from '../../../../../../../../../../helpers/_constants';
 
 export type MenuListItemType = IPlaylist | IMain | IYourMusic;
 
-interface MenuListProps extends NavMenuProps {
+interface IMenuListProps extends INavMenuProps {
   isVisible: boolean;
 }
 
-export const MenuList: React.FC<MenuListProps> = ({
+export const MenuList: React.FC<IMenuListProps> = ({
   user,
   title,
   isVisible

@@ -7,14 +7,20 @@ import { useWindowWidth } from '../../../../../../../../../helpers/_custom-hooks
 
 export type NavMenuTitleType = 'main' | 'your music' | 'playlists';
 
-export interface NavMenuProps {
+export interface INavMenuProps {
   title: NavMenuTitleType;
   user: IUser;
 }
 
-export const NavMenu: React.FC<NavMenuProps> = ({ title, user }) => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(true);
+export const NavMenu: React.FC<INavMenuProps> = ({ title, user }) => {
   const windowWidth = useWindowWidth();
+
+  let isMenuOpen: boolean = true;
+  if (windowWidth <= 768) {
+    isMenuOpen = false;
+  }
+
+  const [menuOpen, setMenuOpen] = useState<boolean>(isMenuOpen);
 
   useEffect((): void => {
     if (windowWidth <= 768) {
