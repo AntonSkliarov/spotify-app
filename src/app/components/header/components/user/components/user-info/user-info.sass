@@ -1,12 +1,18 @@
+@import '../../../../../../../helpers/_variables'
+  
 .user-info
   display: flex
   align-items: center
 
+  &__img-container
+    line-height: 15px
+
   &__img
     max-width: 30px
     max-height: 30px
-    border-radius: 50%
+
+    border-radius: $border-radius-circle
     display: inline-block
 
   &__name
-    margin-left: 3px
+    margin-left: $margin-xs

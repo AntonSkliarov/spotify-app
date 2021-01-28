@@ -10,10 +10,10 @@
   min-width: 160px
   padding: 0
 
-  font-size: 14px
+  font-size: $small
 
   background: $light-black
-  border-radius: 2px
+  border-radius: $border-radius-xxs
   border: none
 
   &::before
@@ -38,7 +38,7 @@
       background: $grey
 
   &__item:hover &__link
-    color: $sand
+    color: $light-black
 
   &__link
     display: block
@@ -48,7 +48,7 @@
     color: $grey
     white-space: nowrap
 
-    transition: all 0.2s ease
+    transition: background 0.2s ease
 
     &:hover
       background: none

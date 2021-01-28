@@ -29,7 +29,7 @@
       margin-left: $margin-xs
 
   &__inFavorites
-    margin-left: $margin * 2
+    margin-left: $margin-lg
     padding: 0
 
     color: $sand
@@ -39,10 +39,10 @@
 
   &__title
     width: 45%
-    margin-left: $margin * 2
+    margin-left: $margin-lg
 
     color: $white
-    font-size: 14px
+    font-size: $small
 
     @media screen and ( max-width: 1200px)
       width: auto
@@ -50,7 +50,7 @@
     @media screen and ( max-width: 390px)
       margin-left: $margin
 
-      font-size: 12px
+      font-size: $x-small * 1.1
 
   &__title-feat
     color: $grey
@@ -62,10 +62,10 @@
       cursor: pointer
 
   &__duration
-    margin-left: 40px
+    margin-left: $margin-xl
 
     color: $grey
-    font-size: 14px
+    font-size: $small
 
     @media screen and ( max-width: 1200px)
       margin-left: auto
@@ -79,13 +79,13 @@
     padding-right: $padding-sm
 
     color: $grey
-    font-size: 14px
+    font-size: $small
 
     @media screen and ( max-width: 400px)
       display: none
 
   &__popularity
-    margin-left: 50px
+    margin-left: $margin-xl * 0.85
     padding-right: $padding-sm
 
     font-size: $large

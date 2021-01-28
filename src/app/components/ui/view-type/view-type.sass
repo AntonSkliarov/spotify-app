@@ -1,8 +1,7 @@
 @import '../../../../helpers/_variables'
 
 .view-type
-  padding: 8px
-  margin-bottom: 4px
+  padding: $padding-sm * 0.8
 
   color: $white
   line-height: 10px
@@ -14,15 +13,15 @@
   cursor: pointer
 
   &_active
-    padding: 8px
+    padding: $padding-sm * 0.8
 
     background: $light-black
-    border-radius: 50%
+    border-radius: $border-radius-circle
   
   &:hover
-    padding: 8px
+    padding: $padding-sm * 0.8
 
-    border-radius: 50%
+    border-radius: $border-radius-circle
     background: lighten( $light-black , 5% )
 
     cursor: pointer
