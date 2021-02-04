@@ -1,9 +1,9 @@
 import React from 'react';
 import './track.sass';
-import { IPopularTracks } from '../../../../../../../../../../../helpers/interfaces';
+import { IPopularTracks } from '@helpers/interfaces';
 import { AddToFavButton } from '@ui/add-to-fav-button';
 import { Explicit } from '@ui/explicit';
-import { FUNC } from '../../../../../../../../../../../helpers/_functions';
+import { FUNC } from '@helpers/_functions';
 import { IoMdTrendingUp, IoMdTrendingDown } from 'react-icons/io';
 
 type TrackType = 'popular' | 'album';

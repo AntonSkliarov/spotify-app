@@ -2,7 +2,7 @@ import React from 'react';
 import { Friend } from './components/friend';
 import './friends.sass';
 import userFixture from '../../../../../../../api/userFixture.json';
-import { IFriend } from '../../../../../../../helpers/interfaces';
+import { IFriend } from '@helpers/interfaces';
 import { ActionButton } from '@ui/action-button';
 
 const { friends } = userFixture.user;

@@ -1,4 +1,4 @@
-import { ITab, IHighlighterStyle } from '../helpers/interfaces';
+import { ITab, IHighlighterStyle } from '@helpers/interfaces';
 type TabsType = ITab[];
 
 interface IFunc {

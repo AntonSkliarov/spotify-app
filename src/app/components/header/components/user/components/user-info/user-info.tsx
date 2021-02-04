@@ -1,6 +1,6 @@
 import React from 'react';
 import './user-info.sass';
-import { IUser } from '../../../../../../../helpers/interfaces';
+import { IUser } from '@helpers/interfaces';
 
 interface IUserInfoProps {
   user: IUser,

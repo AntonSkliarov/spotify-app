@@ -1,6 +1,6 @@
 import React from 'react';
 import './album-tracks.sass';
-import { IAlbumTrack } from '../../../../../../../../../../../../../../../helpers/interfaces';
+import { IAlbumTrack } from '@helpers/interfaces';
 import { IoIosThumbsUp, IoMdStopwatch } from 'react-icons/io';
 import { Track } from '../../../../../track';
 

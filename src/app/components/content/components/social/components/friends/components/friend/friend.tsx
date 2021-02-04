@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoPersonSharp } from 'react-icons/io5';
 import './friend.sass';
-import { IFriend } from '../../../../../../../../../helpers/interfaces';
+import { IFriend } from '@helpers/interfaces';
 
 interface IFriendProps {
   friend: IFriend;

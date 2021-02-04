@@ -4,7 +4,7 @@ import {
   IMainArtist,
   ITab,
   IAlbum
-} from '../../../../../../helpers/interfaces';
+} from '@helpers/interfaces';
 import optionsFixture from '../../../../../../api/optionsFixture.json';
 import albumFixture from '../../../../../../api/albumFixture.json';
 

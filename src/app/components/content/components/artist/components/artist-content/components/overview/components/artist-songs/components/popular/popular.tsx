@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ArtistContext, IArtistContext } from '../../../../../../../../artist-provider';
 import './popular.sass';
-import { IPopularTracks } from '../../../../../../../../../../../../../helpers/interfaces';
+import { IPopularTracks } from '@helpers/interfaces';
 import { Track } from '../../../track';
 import { ActionButton } from '@ui/action-button';
 

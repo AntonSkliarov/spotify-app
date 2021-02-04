@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './menu-list.sass';
 import { INavMenuProps } from '../nav-menu';
-import { IPlaylist, IMain, IYourMusic } from '../../../../../../../../../../helpers/interfaces';
-import { ICONS } from '../../../../../../../../../../helpers/_constants';
+import { IPlaylist, IMain, IYourMusic } from '@helpers/interfaces';
+import { ICONS } from '@helpers/_constants';
 
 export type MenuListItemType = IPlaylist | IMain | IYourMusic;
 

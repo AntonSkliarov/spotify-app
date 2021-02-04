@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { IoChevronDown, IoChevronUp } from 'react-icons/io5';
 import './nav-menu.sass';
-import { IUser } from '../../../../../../../../../helpers/interfaces';
+import { IUser } from '@helpers/interfaces';
 import { MenuList } from './components';
-import { useWindowWidth } from '../../../../../../../../../helpers/_custom-hooks';
+import { useWindowWidth } from '@helpers/_custom-hooks';
 
 export type NavMenuTitleType = 'main' | 'your music' | 'playlists';
 

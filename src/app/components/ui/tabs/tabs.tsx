@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { TabItem } from './components/tab-item';
 import './tabs.sass';
 import { ArtistContext, IArtistContext } from '../../content/components/artist/artist-provider';
-import { ITab } from '../../../../helpers/interfaces';
-import { FUNC } from '../../../../helpers/_functions';
+import { ITab } from '@helpers/interfaces';
+import { FUNC } from '@helpers/_functions';
 
 export const Tabs: React.FC = () => {
   const {

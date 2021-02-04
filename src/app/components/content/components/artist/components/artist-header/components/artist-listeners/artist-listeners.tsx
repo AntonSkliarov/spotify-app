@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ArtistContext } from '../../../../artist-provider';
 import './artist-listeners.sass';
 import { IArtistContext } from '../../../../artist-provider';
-import { FUNC } from '../../../../../../../../../helpers/_functions';
+import { FUNC } from '@helpers/_functions';
 
 export const ArtistListeners: React.FC = () => {
   const { artist } = useContext<IArtistContext>(ArtistContext);

@@ -1,7 +1,7 @@
 import React from 'react';
 import CSS from 'csstype';
 import './related-artist-card.sass';
-import { IRelatedArtists } from '../../../../../../../../../../../helpers/interfaces';
+import { IRelatedArtists } from '@helpers/interfaces';
 import { IoIosPlay } from 'react-icons/io';
 
 type RelatedArtistsCardType = 'small' | 'large';
