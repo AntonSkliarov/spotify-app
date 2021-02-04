@@ -22,7 +22,6 @@ export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites, type })
     };
   }
 
-
   const onClick = (): void => {
     setAddedToFavorites(!addedToFavorites);
   };

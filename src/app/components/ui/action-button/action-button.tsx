@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import classNames from 'classnames';
 import { IoIosMore } from 'react-icons/io';
 import { IoPlaySharp } from 'react-icons/io5';
@@ -12,14 +12,23 @@ interface IActionButtonProps {
   visibleFullList?: boolean;
 }
 
-const actionButtonContent = {
+interface IActionButtonContent {
+  'play': ReactElement;
+  'follow': ReactElement;
+  'more': ReactElement;
+  'save': ReactElement;
+  'find friends': ReactElement;
+  '5 more': string;
+}
+
+const actionButtonContent: IActionButtonContent = {
   'play':
-  <>
-    <span className="action-button__play-icon">
-      <IoPlaySharp size={17} />
-    </span>
-    <span>Play</span>
-  </>,
+    <>
+      <span className="action-button__play-icon">
+        <IoPlaySharp size={17} />
+      </span>
+      <span>Play</span>
+    </>,
   'follow': <span>Follow</span>,
   'more': <IoIosMore size={17} />,
   'save': <span>Save</span>,
@@ -41,6 +50,77 @@ export const ActionButton: React.FC<IActionButtonProps> = ({
     "action-button__find-friends": type === 'find friends',
     "action-button__5-more": type === '5 more',
   });
+
+  // switch (type) {
+  //   case 'play':
+  //     return (
+  //       <button
+  //         className="action-button action-button__play"
+  //         type="button"
+  //       >
+  //         <span className="action-button__play-icon">
+  //           <IoPlaySharp size={17}/>
+  //         </span>
+
+  //         <span>Play</span>
+  //       </button>
+  //     );
+
+  //   case 'follow':
+  //     return (
+  //       <button
+  //         className="action-button action-button__follow"
+  //         type="button"
+  //       >
+  //         <span>Follow</span>
+  //       </button>
+  //     );
+
+  //   case 'more':
+  //     return (
+  //       <button
+  //         className="action-button action-button__more"
+  //         type="button"
+  //         title='More'
+  //       >
+  //         <IoIosMore size={17}/>
+  //       </button>
+  //     );
+
+  //   case 'save':
+  //     return (
+  //       <button
+  //         className="action-button action-button__save"
+  //         type="button"
+  //       >
+  //         <span>Save</span>
+  //       </button>
+  //     );
+
+  //   case 'find friends':
+  //     return (
+  //       <button
+  //         className="action-button action-button__find-friends"
+  //         type="button"
+  //       >
+  //         <span>Find Friends</span>
+  //       </button>
+  //     );
+
+  //   case '5 more':
+  //     return (
+  //       <button
+  //         className="action-button action-button__5-more"
+  //         type="button"
+  //         onClick={onClick}
+  //       >
+  //         {visibleFullList ? 'Hide': 'Show 5 more'}
+  //       </button>
+  //     );
+    
+  //   default:
+  //     return null;
+  // }
 
   return (
     <button
