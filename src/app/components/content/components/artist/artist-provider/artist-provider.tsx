@@ -14,7 +14,7 @@ const { defaultTabs } = optionsFixture;
 const tabsList = optionsFixture.options;
 
 type DefaultTabs = boolean;
-type TabsListType = Array<ITab>;
+type TabsListType = ITab[];
 export type onChangeType = (tab: ITab) => void;
 
 export interface IArtistContext {

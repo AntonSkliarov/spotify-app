@@ -5,7 +5,7 @@ import { IoIosThumbsUp, IoMdStopwatch } from 'react-icons/io';
 import { Track } from '../../../../../track';
 
 interface IAlbumTracksProps {
-  tracks: Array<IAlbumTrack>;
+  tracks: IAlbumTrack[];
 }
 
 export const AlbumTracks: React.FC<IAlbumTracksProps> = ({ tracks }) => {

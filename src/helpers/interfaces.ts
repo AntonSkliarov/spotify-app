@@ -25,10 +25,10 @@ export interface IUser {
   lastName: string;
   id: number;
   photo: string;
-  friends: Array<IFriend>;
-  main: Array<IMain>;
-  "your music": Array<IYourMusic>;
-  playlists: Array<IPlaylist>;
+  friends: IFriend[];
+  main: IMain[];
+  "your music": IYourMusic[];
+  playlists: IPlaylist[];
 }
 
 // current track interfaces
@@ -56,7 +56,7 @@ export interface ITrack {
 // artist interfaces
 export interface IPopularTracks {
   title: string;
-  feat: Array<string> | null;
+  feat: string[] | null;
   duration: number;
   inMediaLibrary: number;
   albumImage: string;
@@ -85,8 +85,8 @@ export interface IMainArtist {
   spotify: string;
   photo: string;
   latestRelease: ILatestRelease;
-  popularTracks: Array<IPopularTracks>;
-  relatedArtists: Array<IRelatedArtists>;
+  popularTracks: IPopularTracks[];
+  relatedArtists: IRelatedArtists[];
 }
 
 // artist interface
@@ -98,7 +98,7 @@ export interface ITab {
 // album interfaces
 export interface IAlbumTrack {
   title: string;
-  feat: Array<string> | null;
+  feat: string[] | null;
   duration: number;
   inMediaLibrary: number;
   albumImage: string;
@@ -110,7 +110,7 @@ export interface IAlbum {
   name: string;
   image: string;
   releaseDate: number;
-  tracks: Array<IAlbumTrack>;
+  tracks: IAlbumTrack[];
 }
 
 // highlighterStyle interface

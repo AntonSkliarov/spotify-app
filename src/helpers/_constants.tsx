@@ -10,9 +10,9 @@ export interface IIcon {
 }
 
 export interface IIcons {
-  main: Array<IIcon>;
-  "your music": Array<IIcon>;
-  playlists: Array<IIcon>;
+  main: IIcon[];
+  "your music": IIcon[];
+  playlists: IIcon[];
 }
 
 export const ICONS: IIcons = {

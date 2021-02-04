@@ -1,5 +1,5 @@
 import { ITab, IHighlighterStyle } from '../helpers/interfaces';
-type TabsType = Array<ITab>;
+type TabsType = ITab[];
 
 interface IFunc {
   msToMinAndSec: (args: number) => string;
