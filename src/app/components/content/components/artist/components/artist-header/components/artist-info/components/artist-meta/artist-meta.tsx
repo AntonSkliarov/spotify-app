@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import './artist-meta.sass';
-import { ArtistContext } from '../../../../../../artist-provider';
-import { IArtistContext } from '../../../../../../artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import { ActionButton } from '@ui/action-button';
 
 export const ArtistMeta: React.FC = () => {

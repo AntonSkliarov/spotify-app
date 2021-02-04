@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { TabItem } from './components/tab-item';
 import './tabs.sass';
-import { ArtistContext, IArtistContext } from '../../content/components/artist/artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import { ITab } from '@helpers/interfaces';
 import { FUNC } from '@helpers/_functions';
 

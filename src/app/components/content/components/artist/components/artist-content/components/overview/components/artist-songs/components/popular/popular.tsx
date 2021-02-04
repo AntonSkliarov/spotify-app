@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { ArtistContext, IArtistContext } from '../../../../../../../../artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import './popular.sass';
 import { IPopularTracks } from '@helpers/interfaces';
 import { Track } from '../../../track';

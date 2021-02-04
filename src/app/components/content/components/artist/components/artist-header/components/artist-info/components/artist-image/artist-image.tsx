@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import './artist-image.sass';
-import { ArtistContext } from '../../../../../../artist-provider';
-import { IArtistContext } from '../../../../../../artist-provider';  
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import { HiCheck } from "react-icons/hi";
 
 export const ArtistImage: React.FC = () => {

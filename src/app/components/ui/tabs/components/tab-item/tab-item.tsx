@@ -5,7 +5,7 @@ import { ITab } from '@helpers/interfaces';
 import {
   IArtistContext,
   ArtistContext
-} from '../../../../../components/content/components/artist/artist-provider';
+} from '@artistProvider';
 
 interface ITabItemProps {
   tab: ITab;

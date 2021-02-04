@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import { ArtistContext } from '../../../../artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import './artist-listeners.sass';
-import { IArtistContext } from '../../../../artist-provider';
 import { FUNC } from '@helpers/_functions';
 
 export const ArtistListeners: React.FC = () => {

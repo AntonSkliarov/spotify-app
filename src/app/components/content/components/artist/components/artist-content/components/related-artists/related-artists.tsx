@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ArtistContext, IArtistContext } from '../../../../artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import './related-artists.sass';
 import { IRelatedArtists } from '@helpers/interfaces';
 import { RelatedArtistCard } from './components/related-artist-card';

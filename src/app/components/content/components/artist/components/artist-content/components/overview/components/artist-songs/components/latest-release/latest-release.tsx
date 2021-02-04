@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ArtistContext, IArtistContext } from '../../../../../../../../artist-provider';
+import { ArtistContext, IArtistContext } from '@artistProvider';
 import './latest-release.sass';
 
 export const LatestRelease: React.FC = () => {
