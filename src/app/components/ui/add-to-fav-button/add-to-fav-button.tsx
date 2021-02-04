@@ -12,7 +12,7 @@ interface IAddToFavButton {
 }
 
 export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites, type }) => {
-  const [addedToFavorites, setAddedToFavorites] = useState<boolean>(inFavorites);
+  const [addedToFavorites, setAddedToFavorites] = useState(inFavorites);
 
   let iconStyles: CSS.Properties = {};
 
