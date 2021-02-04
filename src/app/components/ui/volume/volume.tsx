@@ -7,7 +7,7 @@ export const Volume: React.FC = () => {
   const elRef = useRef<HTMLDivElement>(null);
 
   useEffect((): void => {
-    if (elRef.current !== null) {
+    if (elRef.current && elRef) {
       noUiSlider.create(elRef.current, {
         connect: [true, false],
         start: [80],
