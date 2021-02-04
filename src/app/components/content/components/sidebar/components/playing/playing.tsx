@@ -1,6 +1,6 @@
 import React from 'react';
 import './playing.sass';
-import currentTrack from '../../../../../../../api/currentTrack.json';
+import currentTrack from '@api/currentTrack.json';
 import { ITrack } from '@helpers/interfaces';
 import { AddToFavButton } from '@ui/add-to-fav-button';
 

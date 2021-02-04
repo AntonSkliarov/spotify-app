@@ -1,6 +1,6 @@
 import React from 'react';
 import './artist-album.sass';
-import albumFixture from '../../../../../../../../../../../../../api/albumFixture.json';
+import albumFixture from '@api/albumFixture.json';
 import { ActionButton } from '@ui/action-button';
 import { AlbumTracks } from './components/album-tracks';
 

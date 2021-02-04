@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavMenu } from './components/nav-menu';
 import './navigation.sass';
-import userFixture from '../../../../../../../api/userFixture.json';
+import userFixture from '@api/userFixture.json';
 
 const { user } = userFixture;
 

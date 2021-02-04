@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import artistFixture from '../../../../../../api/artistFixture.json';
+import artistFixture from '@api/artistFixture.json';
 import {
   IMainArtist,
   ITab,
   IAlbum
 } from '@helpers/interfaces';
-import optionsFixture from '../../../../../../api/optionsFixture.json';
-import albumFixture from '../../../../../../api/albumFixture.json';
+import optionsFixture from '@api/optionsFixture.json';
+import albumFixture from '@api/albumFixture.json';
 
 const artist = artistFixture.artist;
 const album = albumFixture.album;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './progress.sass';
-import currentTrack from '../../../../../api/currentTrack.json';
+import currentTrack from '@api/currentTrack.json';
 import { ITrack } from '@helpers/interfaces';
 import { FUNC } from '@helpers/_functions';
 import { SongProgress } from '@ui/song-progress';
