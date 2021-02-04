@@ -19,16 +19,13 @@ export const MenuList: React.FC<IMenuListProps> = ({
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect((): void => {
-    if (!isVisible && listRef.current !== null) {
-      listRef.current.style.height = '0';
-    }
-
-    if (isVisible
-      && wrapperRef.current !== null
-      && listRef.current !== null
-    ) {
-      const wrapperHeight = wrapperRef.current.clientHeight;
-      listRef.current.style.height = wrapperHeight + 'px';
+    if (listRef.current && wrapperRef.current) {
+      if (!isVisible) {
+        listRef.current.style.height = '0';
+      } else {
+        const wrapperHeight = wrapperRef.current.clientHeight;
+        listRef.current.style.height = wrapperHeight + 'px';
+      }
     }
   }, [isVisible]);
 
