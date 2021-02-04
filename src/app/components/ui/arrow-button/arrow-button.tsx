@@ -37,15 +37,16 @@ export const ArrowButton: React.FC<IArrowButtonProps> = ({
 }) => {
   const getArrowButtonIcon = arrowButtonIcon[type];
   const getArrowButtonTitle = arrowButtonTitle[type];
+  const classes = classNames("arrow-button", {
+    "arrow-button_disabled": disabled,
+    "arrow-button__down": type === 'down',
+    "arrow-button__up": type === 'up',
+  });
 
   return (
     <button
       type="button"
-      className={classNames("arrow-button", {
-        "arrow-button_disabled": disabled,
-        "arrow-button__down": type === 'down',
-        "arrow-button__up": type === 'up',
-      })}
+      className={classes}
       onClick={onClick}
       title={getArrowButtonTitle}
     >
