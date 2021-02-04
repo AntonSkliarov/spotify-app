@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowButton } from '../../../../../ui/arrow-button';
+import { ArrowButton } from '@ui/arrow-button';
 import { DropdownMenu } from './components';
 import './user-actions.sass';
 

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './artist-meta.sass';
 import { ArtistContext } from '../../../../../../artist-provider';
 import { IArtistContext } from '../../../../../../artist-provider';
-import { ActionButton } from '../../../../../../../../../ui/action-button';
+import { ActionButton } from '@ui/action-button';
 
 export const ArtistMeta: React.FC = () => {
   const { artist } = useContext<IArtistContext>(ArtistContext);

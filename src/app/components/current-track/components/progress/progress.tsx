@@ -3,7 +3,7 @@ import './progress.sass';
 import currentTrack from '../../../../../api/currentTrack.json';
 import { ITrack } from '../../../../../helpers/interfaces';
 import { FUNC } from '../../../../../helpers/_functions';
-import { SongProgress } from '../../../ui/song-progress';
+import { SongProgress } from '@ui/song-progress';
 
 const track: ITrack = currentTrack.track;
 

@@ -3,7 +3,7 @@ import { ArtistContext, IArtistContext } from '../../../../../../../../artist-pr
 import './popular.sass';
 import { IPopularTracks } from '../../../../../../../../../../../../../helpers/interfaces';
 import { Track } from '../../../track';
-import { ActionButton } from '../../../../../../../../../../../ui/action-button';
+import { ActionButton } from '@ui/action-button';
 
 export const Popular: React.FC = () => {
   const [visibleFullList, setVisibleFullList] = useState<boolean>(false);

@@ -1,6 +1,6 @@
 import React from 'react';
+import { ArrowButton } from '@ui/arrow-button';
 import './page-flows.sass';
-import { ArrowButton } from '../../../ui/arrow-button';
 
 export const PageFlows: React.FC = () => (
   <div className="page-flows">

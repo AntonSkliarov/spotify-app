@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ViewType } from '../../../../../../../../../ui/view-type';
+import { ViewType } from '@ui/view-type';
 import './artist-albums.sass';
 import { ArtistAlbum } from './components/artist-album';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './artist-album.sass';
 import albumFixture from '../../../../../../../../../../../../../api/albumFixture.json';
-import { ActionButton } from '../../../../../../../../../../../ui/action-button';
+import { ActionButton } from '@ui/action-button';
 import { AlbumTracks } from './components/album-tracks';
 
 const { album } = albumFixture;
