@@ -5,7 +5,7 @@ import './shuffle.sass';
 
 
 export const Shuffle: React.FC = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState(false);
 
   const onClick = (): void => {
     setIsActive(!isActive);

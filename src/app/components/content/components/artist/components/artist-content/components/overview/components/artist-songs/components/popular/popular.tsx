@@ -6,7 +6,7 @@ import { Track } from '../../../track';
 import { ActionButton } from '@ui/action-button';
 
 export const Popular: React.FC = () => {
-  const [visibleFullList, setVisibleFullList] = useState<boolean>(false);
+  const [visibleFullList, setVisibleFullList] = useState(false);
   const { artist } = useContext<IArtistContext>(ArtistContext);
   const { popularTracks } = artist;
 

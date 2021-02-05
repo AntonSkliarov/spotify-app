@@ -4,7 +4,7 @@ import './queue.sass';
 import { RiPlayList2Fill } from "react-icons/ri";
 
 export const Queue: React.FC = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState(false);
 
   const onClick = (): void => {
     setIsActive(!isActive);

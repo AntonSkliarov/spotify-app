@@ -4,7 +4,7 @@ import { IoNotifications } from 'react-icons/io5';
 import './notifications.sass';
 
 export const Notifications: React.FC = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState(false);
 
   const onClick = (): void => {
     setIsActive(!isActive);

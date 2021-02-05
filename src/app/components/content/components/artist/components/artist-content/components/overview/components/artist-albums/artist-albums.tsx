@@ -4,7 +4,7 @@ import './artist-albums.sass';
 import { ArtistAlbum } from './components/artist-album';
 
 export const ArtistAlbums: React.FC = () => {
-  const [viewFilter, setViewFilter] = useState<string>('list');
+  const [viewFilter, setViewFilter] = useState('list');
 
   const handleFilter = (type: string): void => {
     setViewFilter(type);

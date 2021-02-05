@@ -20,7 +20,7 @@ export const NavMenu: React.FC<INavMenuProps> = ({ title, user }) => {
     isMenuOpen = false;
   }
 
-  const [menuOpen, setMenuOpen] = useState<boolean>(isMenuOpen);
+  const [menuOpen, setMenuOpen] = useState(isMenuOpen);
 
   useEffect((): void => {
     if (windowWidth <= 768) {

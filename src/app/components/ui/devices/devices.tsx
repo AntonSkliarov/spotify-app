@@ -4,7 +4,7 @@ import { IoPhonePortraitSharp } from 'react-icons/io5';
 import './devices.sass';
 
 export const Devices: React.FC = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState(false);
 
   const onClick = (): void => {
     setIsActive(!isActive);
