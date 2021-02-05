@@ -13,46 +13,34 @@ interface IViewTypeProps {
   onClick: (type: string) => void;
 }
 
+const ViewTypeIcon = {
+  'list': <VscListUnordered size={20} />,
+  'cards': <AiFillAppstore size={20} />
+};
+
 export const ViewType: React.FC<IViewTypeProps> = ({
   type,
   viewFilter,
   onClick
 }) => {
+  const getViewTypeIcon = ViewTypeIcon[type];
+  const classes = classNames('view-type', {
+    'view-type__list': type === 'list',
+    'view-type__cards': type === 'cards',
+    'view-type_active': viewFilter === type
+  });
 
-  switch (type) {
-    case 'list':
-      return (
-        <button
-          className={classNames("view-type view-type__list", {
-            'view-type_active': viewFilter === 'list',
-          })}
-          type="button"
-          onClick={() => onClick(type)}
-          title='List type'
-        >
-          <VscListUnordered size={20}/>
-        </button>
-      );
-
-    case 'cards':
-      return (
-        <button
-          className={classNames("view-type view-type__cards", {
-            'view-type_active': viewFilter === 'cards',
-          })}
-          type="button"
-          onClick={() => onClick(type)}
-          title='Cards type'
-        >
-          <AiFillAppstore size={20} />
-        </button>
-      );
-    
-    default:
-      return (
-        <button className="view-type" type="button">
-          List view type
-        </button>
-      );
-  }
+  return (
+    <button
+      className={classes}
+      type="button"
+      onClick={() => onClick(type)}
+      title={type === 'cards'
+        ? 'Cards type'
+        : 'List type'
+      }
+    >
+      {getViewTypeIcon}
+    </button>
+  );
 };
