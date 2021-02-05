@@ -5,19 +5,9 @@ export interface IFriend {
   id: number;
 }
 
-export interface IPlaylist {
+export interface IMenulist {
   name: string;
   id: number;
-}
-
-export interface IMain {
-  name: string;
-  id: number;
-}
-
-export interface IYourMusic {
-  name: string;
-  id: number
 }
 
 export interface IUser {
@@ -26,9 +16,9 @@ export interface IUser {
   id: number;
   photo: string;
   friends: IFriend[];
-  main: IMain[];
-  "your music": IYourMusic[];
-  playlists: IPlaylist[];
+  main: IMenulist[];
+  "your music": IMenulist[];
+  playlists: IMenulist[];
 }
 
 // current track interfaces

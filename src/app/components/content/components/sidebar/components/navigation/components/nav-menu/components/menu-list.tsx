@@ -1,17 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import './menu-list.sass';
 import { INavMenuProps } from '../nav-menu';
-import { IPlaylist, IMain, IYourMusic } from '@helpers/interfaces';
+import { IMenulist } from '@helpers/interfaces';
 import { ICONS } from '@helpers/_constants';
-
-export type MenuListItemType = IPlaylist | IMain | IYourMusic;
 
 interface IMenuListProps extends INavMenuProps {
   isVisible: boolean;
 }
 
 export const MenuList: React.FC<IMenuListProps> = ({
-  user,
+  list,
   title,
   isVisible
 }) => {
@@ -33,7 +31,7 @@ export const MenuList: React.FC<IMenuListProps> = ({
     <ul ref={listRef} className="menu-list">
       <div ref={wrapperRef} className="menu-list__wrapper">
 
-        {user[title].map((item: MenuListItemType, index: number) => (
+        {list.map((item: IMenulist, index: number) => (
           <li className="menu-list__item" key={item.id}>
 
             <a className="menu-list__link" href="/">

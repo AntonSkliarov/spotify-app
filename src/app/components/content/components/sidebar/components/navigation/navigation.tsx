@@ -11,17 +11,17 @@ export const Navigation: React.FC = () => {
 
       <NavMenu
         title={"main"}
-        user={user}
+        list={user.main}
       />
 
       <NavMenu
         title={"your music"}
-        user={user}
+        list={user['your music']}
       />
 
       <NavMenu
         title={"playlists"}
-        user={user}
+        list={user.playlists}
       />
     </section>
   );

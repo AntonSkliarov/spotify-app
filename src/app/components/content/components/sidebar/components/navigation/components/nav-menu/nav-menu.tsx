@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IoChevronDown, IoChevronUp } from 'react-icons/io5';
 import './nav-menu.sass';
-import { IUser } from '@helpers/interfaces';
+import { IMenulist } from '@helpers/interfaces';
 import { MenuList } from './components';
 import { useWindowWidth } from '@helpers/_custom-hooks';
 
@@ -9,10 +9,10 @@ export type NavMenuTitleType = 'main' | 'your music' | 'playlists';
 
 export interface INavMenuProps {
   title: NavMenuTitleType;
-  user: IUser;
+  list: IMenulist[];
 }
 
-export const NavMenu: React.FC<INavMenuProps> = ({ title, user }) => {
+export const NavMenu: React.FC<INavMenuProps> = ({ title, list }) => {
   const windowWidth = useWindowWidth();
 
   let isMenuOpen: boolean = true;
@@ -57,7 +57,7 @@ export const NavMenu: React.FC<INavMenuProps> = ({ title, user }) => {
 
       <MenuList
         title={title}
-        user={user}
+        list={list}
         isVisible={menuOpen}
       />
 
