@@ -1,0 +1,63 @@
+@import '@helpers/_variables'
+
+.popular-track
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+
+  height: 42px
+
+  border-top: 1px solid $light-black
+
+  &:hover
+    background: $light-black
+
+  &:last-child
+    border-bottom: 1px solid $light-black
+
+  &__image
+    width: 42px
+    height: 42px
+
+  &__number
+    width: 12px
+    margin-left: $margin-sm
+
+    color: $grey
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-xs
+
+  &__inFavorites
+    margin-left: $margin-lg
+    padding: 0
+
+    color: $sand
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-sm
+
+  &__title
+    width: 45%
+    margin-left: $margin-lg
+
+    color: $white
+    font-size: $small
+
+    @media screen and ( max-width: 1200px)
+      width: auto
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin
+
+      font-size: $x-small * 1.1
+
+  &__in-media-library
+    margin-left: auto
+    padding-right: $padding-sm
+
+    color: $grey
+    font-size: $small
+
+    @media screen and ( max-width: 400px)
+      display: none

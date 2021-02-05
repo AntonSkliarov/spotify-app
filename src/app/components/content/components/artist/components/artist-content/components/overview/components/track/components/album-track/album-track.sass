@@ -1,0 +1,83 @@
+@import '@helpers/_variables'
+
+.album-track
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+
+  height: 42px
+
+  border-top: 1px solid $light-black
+
+  &:hover
+    background: $light-black
+
+  &:last-child
+    border-bottom: 1px solid $light-black
+
+  &__number
+    width: 12px
+    margin-left: $margin-sm
+
+    color: $grey
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-xs
+
+  &__inFavorites
+    margin-left: $margin-lg
+    padding: 0
+
+    color: $sand
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin-sm
+
+  &__title
+    width: 45%
+    margin-left: $margin-lg
+
+    color: $white
+    font-size: $small
+
+    @media screen and ( max-width: 1200px)
+      width: auto
+
+    @media screen and ( max-width: 390px)
+      margin-left: $margin
+
+      font-size: $x-small * 1.1
+
+  &__title-feat
+    color: $grey
+
+    &:hover
+      color: $sand
+      text-decoration: underline
+
+      cursor: pointer
+
+  &__explicit
+    margin-left: auto
+
+    @media screen and ( max-width: 1200px)
+      display: none
+
+  &__duration
+    margin-left: $margin-xl
+
+    color: $grey
+    font-size: $small
+
+    @media screen and ( max-width: 1200px)
+      margin-left: auto
+
+  &__popularity
+    margin-left: $margin-xl * 0.85
+    padding-right: $padding-sm
+
+    font-size: $large
+    color: $grey
+
+    @media screen and ( max-width: 1200px)
+      display: none

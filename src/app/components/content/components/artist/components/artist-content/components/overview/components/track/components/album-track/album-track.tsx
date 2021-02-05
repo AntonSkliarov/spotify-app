@@ -13,37 +13,37 @@ export interface IAlbumTrackProps {
 
 export const AlbumTrack: React.FC<IAlbumTrackProps> = ({ track, index }) => {
   return (
-    <li className="track album-track">
-      <div className="track__number">
+    <li className="album-track">
+      <div className="album-track__number">
         {index + 1}
       </div>
 
-      <div className="track__inFavorites">
+      <div className="album-track__inFavorites">
         <AddToFavButton inFavorites={track.inFavorites} />
       </div>
 
-      <div className="track__title">
+      <div className="album-track__title">
         {!track.feat
           ? track.title
           : (
             <>
               {`${track.title} - `}
-              <span className="track__title-feat">
+              <span className="album-track__title-feat">
                 {track.feat}
               </span>
             </>
           )}
       </div>
 
-      <div className="track__explicit album-track__explicit">
+      <div className="album-track__explicit">
         <Explicit />
       </div>
 
-      <div className="track__duration album-track__duration">
+      <div className="album-track__duration">
         {FUNC.msToMinAndSec(track.duration)}
       </div>
 
-      <div className="track__popularity album-track__popularity">
+      <div className="album-track__popularity">
         {track.inFavorites
           ? <IoMdTrendingUp />
           : <IoMdTrendingDown />

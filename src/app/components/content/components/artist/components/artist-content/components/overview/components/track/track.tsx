@@ -19,7 +19,7 @@ export const Track: React.FC<ITrackProps> = ({
 }) => {
 
   return (
-    <>
+    <div className="track">
       {type === 'album' && (
         <AlbumTrack
           track={track}
@@ -33,6 +33,6 @@ export const Track: React.FC<ITrackProps> = ({
           index={index}
         />
       )}
-    </>
+    </div>
   );
 };

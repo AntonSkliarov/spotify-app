@@ -12,24 +12,24 @@ export interface IPopularTrackProps {
 
 export const PopularTrack: React.FC<IPopularTrackProps> = ({ track, index }) => {
   return (
-    <li className="track track__popular">
-      <div className="track__image-container">
+    <li className="popular-track">
+      <div className="popular-track__image-container">
         <img
-          className="track__image"
+          className="popular-track__image"
           src={track.albumImage}
           alt={track.title}
         />
       </div>
 
-      <div className="track__number">
+      <div className="popular-track__number">
         {index + 1}
       </div>
 
-      <div className="track__inFavorites">
+      <div className="popular-track__inFavorites">
         <AddToFavButton inFavorites={track.inFavorites} />
       </div>
 
-      <div className="track__title">
+      <div className="popular-track__title">
         {track.title}
       </div>
 
@@ -37,7 +37,7 @@ export const PopularTrack: React.FC<IPopularTrackProps> = ({ track, index }) => 
         <Explicit />
       </div>
 
-      <div className="track__in-media-library">
+      <div className="popular-track__in-media-library">
         {FUNC.numberWithCommas(track.inMediaLibrary)}
       </div>
     </li>
