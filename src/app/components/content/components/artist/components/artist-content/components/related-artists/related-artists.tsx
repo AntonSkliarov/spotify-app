@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import classNames from 'classnames';
 import { ArtistContext, IArtistContext } from '@artistProvider';
 import './related-artists.sass';
 import { IRelatedArtists } from '@helpers/interfaces';
@@ -14,47 +15,35 @@ export const RelatedArtists: React.FC<IRelatedArtistsProps> = ({ type }) => {
   const { artist } = useContext<IArtistContext>(ArtistContext);
   const { relatedArtists } = artist;
 
-  switch (type) {
-    case 'small':
-      return (
-        <div className="related-artists related-artists_small">
-          <h3 className="related-artists__title">Related Artists</h3>
+  const classes = {
+    relArtists: classNames("related-artists", {
+      "related-artists_small": type === 'small',
+      "related-artists_large": type === 'large',
+    }),
+    relArtistsList: classNames("related-artists__list", {
+      "related-artists__list_small": type === 'small',
+      "related-artists__list_large": type === 'large',
+    })
+  };
 
-          <ul className="related-artists__list related-artists__list_small">
-            {relatedArtists.map((artist: IRelatedArtists) => (
-              <RelatedArtistCard
-                key={artist.id}
-                artist={artist}
-                type={type}
-              />
-            ))}
+  return (
+    <div
+      className={classes.relArtists}
+    >
+      {type === 'small'
+        && <h3 className="related-artists__title">Related Artists</h3>
+      }
 
-          </ul>
-        </div>
-      );
+      <ul className={classes.relArtistsList}>
+        {relatedArtists.map((artist: IRelatedArtists) => (
+          <RelatedArtistCard
+            key={artist.id}
+            artist={artist}
+            type={type}
+          />
+        ))}
 
-    case 'large':
-      return (
-        <div className="related-artists related-artists_large">
-
-          <ul className="related-artists__list related-artists__list_large">
-            {relatedArtists.map((artist: IRelatedArtists) => (
-              <RelatedArtistCard
-                key={artist.id}
-                artist={artist}
-                type={type}
-              />
-            ))}
-
-          </ul>
-        </div>
-      );
-    
-    default:
-      return (
-        <div className="related-artists">
-          No related artists
-        </div>
-      );
-  }
+      </ul>
+    </div>
+  );
 };
