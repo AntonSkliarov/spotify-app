@@ -24,6 +24,8 @@ export const Playing: React.FC = () => (
       </a>
     </div>
 
-    <AddToFavButton inFavorites={track.inFavorites} type={"playing"} />
+    <div className="playing__add-to-fav-button">
+      <AddToFavButton inFavorites={track.inFavorites} />
+    </div>
   </section>
 );

@@ -1,26 +1,14 @@
 import React, { useState } from 'react';
-import CSS from 'csstype';
 import './add-to-fav-button.sass';
 import { GoCheck } from "react-icons/go";
 import { IoAdd } from 'react-icons/io5';
 
-type AddToFavButtonType = 'playing';
-
 interface IAddToFavButton {
   inFavorites: boolean;
-  type?: AddToFavButtonType;
 }
 
-export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites, type }) => {
+export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites }) => {
   const [addedToFavorites, setAddedToFavorites] = useState(inFavorites);
-
-  let iconStyles: CSS.Properties = {};
-
-  if (type === 'playing') {
-    iconStyles = {
-      paddingRight: '15px'
-    };
-  }
 
   const onClick = (): void => {
     setAddedToFavorites(!addedToFavorites);
@@ -31,7 +19,6 @@ export const AddToFavButton: React.FC<IAddToFavButton> = ({ inFavorites, type })
       className="add-to-fav-button"
       type="button"
       onClick={onClick}
-      style={iconStyles}
       title={addedToFavorites ? 'Added to favorites' : 'Add to favorites'}
     >
       {addedToFavorites
