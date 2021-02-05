@@ -14,22 +14,22 @@ export const LargeRelArtistCard: React.FC<LargeArtistCardProps> = ({ artist }) =
   };
 
   return (
-    <li className="related-artist-card related-artist-card_large">
+    <li className="large-rel-artist-card">
       <div
-        className="related-artist-card__image-container"
+        className="large-rel-artist-card__image-container"
         style={imgStyles}
       >
 
-        <span className="related-artist-card__icon">
+        <span className="large-rel-artist-card__icon">
           <IoIosPlay size={70} />
         </span>
       </div>
 
       <a
-        className="related-artist-card__link related-artist-card__link_large"
+        className="large-rel-artist-card__link"
         href={artist.spotify}
       >
-        <span className="related-artist-card__name related-artist-card__name_large">
+        <span className="large-rel-artist-card__name">
           {artist.name}
         </span>
       </a>

@@ -1,12 +1,9 @@
 @import '@helpers/_variables'
 
 .related-artist-card
-  padding: $padding-xs
-  margin-bottom: $margin-xxs
-
-  background: $light-black
-
   &_small
+    margin-bottom: $margin-xxs
+
     @media screen and ( max-width: 1024px)
       margin: $margin-sm
       width: calc( (100% / 3) - 20px )
@@ -28,71 +25,3 @@
 
     @media screen and ( max-width: 480px)
       max-width: 420px
-
-  &:hover
-    background: lighten($light-black , 6%)
-
-  &__link
-    display: flex
-    align-items: center
-
-    font-size: $small
-
-    &_large
-      display: block
-
-      padding: $padding
-
-      background: $light-black
-      color: $white
-
-      &:hover
-        text-decoration: underline
-
-        cursor: pointer
-
-  &__image
-    width: 42px
-    height: 42px
-
-    border-radius: $border-radius-circle
-
-    object-fit: cover
-
-  &__image-container
-    display: flex
-    align-items: center
-
-    height: 200px
-
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-
-    &:hover .related-artist-card__icon
-      opacity: 1
-      transition: opacity $hover-transition-duration ease
-
-  &__name
-    margin-left: $margin
-
-    color: $white
-
-    &_small
-      @media screen and ( max-width: 480px)
-        display: none
-
-    &_large
-      margin: 0
-
-  &__icon
-    color: $white
-
-    margin: 0 auto
-    opacity: 0
-    transition: opacity $hover-transition-duration ease
-    text-shadow: 1px 5px 15px $black
-    filter: drop-shadow(0 0 0.75rem black)
-
-    &:hover
-      cursor: pointer

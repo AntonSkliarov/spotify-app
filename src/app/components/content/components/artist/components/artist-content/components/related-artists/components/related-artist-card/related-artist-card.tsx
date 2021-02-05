@@ -18,8 +18,17 @@ export const RelatedArtistCard: React.FC<IRelatedArtistCardProps> = ({
 
   return (
     <>
-      {type === 'large' && <LargeRelArtistCard artist={artist} />}
-      {type === 'small' && <SmallRelArtistCard artist={artist} />}
+      {type === 'large' && (
+        <div className="related-artist-card_large">
+          <LargeRelArtistCard artist={artist} />
+        </div>
+      )}
+
+      {type === 'small' && (
+        <div className="related-artist-card_small">
+          <SmallRelArtistCard artist={artist} />
+        </div>
+      )}
     </>
   );
 };
