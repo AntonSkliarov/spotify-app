@@ -1,19 +1,18 @@
 @import '@helpers/_variables'
 
 .lyrics
-  width: 15%
-  padding: 0 $padding 0 0
-
   font-size: $x-small
   text-transform: uppercase
   color: $grey
 
-  &:hover
-    color: $sand
-    text-decoration: underline
+  @media (hover)
+    &:hover
+      color: $sand
+      text-decoration: underline
 
   &_active
     color: $green
 
-    &:hover
-      color: $green
+    @media (hover)
+      &:hover
+        color: $green

@@ -5,7 +5,10 @@ import './options.sass';
 
 export const Options: React.FC = () => (
   <div className="options">
-    <Lyrics />
+    <div className="options__lyrics">
+      <Lyrics />
+    </div>
+
     <Controls />
   </div>
 );

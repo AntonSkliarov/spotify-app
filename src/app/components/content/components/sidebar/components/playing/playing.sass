@@ -26,9 +26,10 @@
     color: $grey
     font-size: $small
 
-    &:hover
-      color: $white
-      text-decoration: underline
+    @media (hover)
+      &:hover
+        color: $white
+        text-decoration: underline
 
   &__add-to-fav-button
     margin-left: auto

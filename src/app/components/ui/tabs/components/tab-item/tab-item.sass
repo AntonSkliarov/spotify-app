@@ -20,8 +20,9 @@
 
   transition: color $hover-transition-duration ease
 
-  &:hover
-    color: $white
+  @media (hover)
+    &:hover
+      color: $white
 
   &_active
     color: $white

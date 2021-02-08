@@ -5,6 +5,9 @@ import './notifications.sass';
 
 export const Notifications: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = classNames(`notifications`, {
+    'notifications_active': isActive,
+  });
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -12,9 +15,7 @@ export const Notifications: React.FC = () => {
 
   return (
     <button
-      className={classNames(`notifications`, {
-        'notifications_active': isActive,
-      })}
+      className={classes}
       type="button"
       onClick={onClick}
       title='Notifications'

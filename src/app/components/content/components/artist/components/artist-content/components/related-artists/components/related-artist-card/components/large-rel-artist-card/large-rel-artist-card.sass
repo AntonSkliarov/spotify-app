@@ -11,9 +11,10 @@
     background-position: center
     background-size: cover
 
-    &:hover .large-rel-artist-card__icon
-      opacity: 1
-      transition: opacity $hover-transition-duration ease
+    @media (hover)
+      &:hover .large-rel-artist-card__icon
+        opacity: 1
+        transition: opacity $hover-transition-duration ease
 
   &__icon
     margin: 0 auto
@@ -24,8 +25,9 @@
     transition: opacity $hover-transition-duration ease
     filter: drop-shadow(0 0 0.75rem black)
 
-    &:hover
-      cursor: pointer
+    @media (hover)
+      &:hover
+        cursor: pointer
 
   &__link
     display: block
@@ -36,8 +38,9 @@
 
     background: $light-black
 
-    &:hover
-      text-decoration: underline
+    @media (hover)
+      &:hover
+        text-decoration: underline
 
       cursor: pointer
 

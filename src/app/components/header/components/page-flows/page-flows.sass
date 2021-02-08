@@ -15,8 +15,9 @@
 
     cursor: pointer
 
-    &:hover
-      color: $white
+    @media (hover)
+      &:hover
+        color: $white
 
     &_disabled
       color: darken($grey , 30%)

@@ -5,6 +5,11 @@ import './devices.sass';
 
 export const Devices: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = {
+    button: classNames(`devices`, {
+      'devices_active': isActive,
+    })
+  };
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -12,9 +17,7 @@ export const Devices: React.FC = () => {
 
   return (
     <button
-      className={classNames(`devices`, {
-        'devices_active': isActive,
-      })}
+      className={classes.button}
       onClick={onClick}
     >
 

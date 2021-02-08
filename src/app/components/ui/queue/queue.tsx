@@ -5,6 +5,9 @@ import { RiPlayList2Fill } from "react-icons/ri";
 
 export const Queue: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = classNames(`queue`, {
+    'queue_active': isActive,
+  });
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -12,9 +15,7 @@ export const Queue: React.FC = () => {
 
   return (
     <button
-      className={classNames(`queue`, {
-        'queue_active': isActive,
-      })}
+      className={classes}
       onClick={onClick}
       title="Queue"
     >

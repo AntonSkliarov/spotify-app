@@ -15,14 +15,16 @@
 
   cursor: pointer
 
-  &:hover
-    color: $sand
+  @media (hover)
+    &:hover
+      color: $sand
 
   &_active
     color: $green
 
-    &:hover
-      color: $green
+    @media (hover)
+      &:hover
+        color: $green
 
   &__icon
     margin-right: $margin-xs

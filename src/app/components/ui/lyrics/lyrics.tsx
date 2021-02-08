@@ -4,6 +4,9 @@ import './lyrics.sass';
 
 export const Lyrics: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = classNames(`lyrics`, {
+    'lyrics_active': isActive,
+  });
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -11,10 +14,8 @@ export const Lyrics: React.FC = () => {
 
   return (
     <a
-      className={classNames(`lyrics`, {
-        'lyrics_active': isActive,
-      })}
-      href="/"
+      className={classes}
+      href="/#"
       onClick={onClick}
     >
       Lyrics

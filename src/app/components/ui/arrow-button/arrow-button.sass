@@ -11,16 +11,18 @@
 
   cursor: pointer
 
-  &:hover
-    color: $white
+  @media (hover)
+    &:hover
+      color: $white
 
   &_disabled
     color: darken($grey , 30%)
 
-    &:hover
-      color: darken($grey , 30%)
+    @media (hover)
+      &:hover
+        color: darken($grey , 30%)
 
-      cursor: default
+        cursor: default
 
   &__down,
   &__up

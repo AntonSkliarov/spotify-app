@@ -14,6 +14,9 @@ interface ITabItemProps {
 
 export const TabItem: React.FC<ITabItemProps> = ({ tab, currentTab }) => {
   const { onChange } = useContext<IArtistContext>(ArtistContext);
+  const classes = classNames('tab-item', {
+    'tab-item_active': (currentTab !== null) && (currentTab.value === tab.value),
+  });
   
   const handleSelectTab = (tab: ITab) => {
     if (onChange !== null) {
@@ -22,9 +25,7 @@ export const TabItem: React.FC<ITabItemProps> = ({ tab, currentTab }) => {
   };
 
   return (
-    <li className={classNames('tab-item', {
-      'tab-item_active': (currentTab !== null) && (currentTab.value === tab.value),
-    })}
+    <li className={classes}
       onClick={() => handleSelectTab(tab)}
     >
 

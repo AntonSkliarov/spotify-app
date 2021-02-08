@@ -34,11 +34,13 @@
 
     transition: background 0.2s ease
 
-    &:hover
-      background: $grey
+    @media (hover)
+      &:hover
+        background: $grey
 
-  &__item:hover &__link
-    color: $light-black
+  @media (hover)
+    &__item:hover &__link
+      color: $light-black
 
   &__link
     display: block

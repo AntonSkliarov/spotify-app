@@ -9,8 +9,9 @@
 
   border-top: 1px solid $light-black
 
-  &:hover
-    background: $light-black
+  @media (hover)
+    &:hover
+      background: $light-black
 
   &:last-child
     border-bottom: 1px solid $light-black
@@ -51,11 +52,12 @@
   &__title-feat
     color: $grey
 
-    &:hover
-      color: $sand
-      text-decoration: underline
+    @media (hover)
+      &:hover
+        color: $sand
+        text-decoration: underline
 
-      cursor: pointer
+        cursor: pointer
 
   &__explicit
     margin-left: auto

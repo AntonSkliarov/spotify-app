@@ -5,6 +5,9 @@ import './repeat.sass';
 
 export const Repeat: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = classNames(`repeat`, {
+    'repeat_active': isActive,
+  });
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -12,9 +15,7 @@ export const Repeat: React.FC = () => {
 
   return (
     <button
-      className={classNames(`repeat`, {
-        'repeat_active': isActive,
-      })}
+      className={classes}
       onClick={onClick}
       title="Repeat"
     >

@@ -6,6 +6,9 @@ import './shuffle.sass';
 
 export const Shuffle: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
+  const classes = classNames(`shuffle`, {
+    'shuffle_active': isActive,
+  });
 
   const onClick = (): void => {
     setIsActive(!isActive);
@@ -13,9 +16,7 @@ export const Shuffle: React.FC = () => {
 
   return (
     <button
-      className={classNames(`shuffle`, {
-        'shuffle_active': isActive,
-      })}
+      className={classes}
       onClick={onClick}
       title='Shuffle'
     >

@@ -8,7 +8,7 @@ interface IFriendProps {
 }
 
 export const Friend: React.FC<IFriendProps> = ({ friend }) => (
-  <a className="friend" href="/">
+  <a className="friend" href="/#">
     <span className="friend__icon">
       <IoPersonSharp />
     </span>
