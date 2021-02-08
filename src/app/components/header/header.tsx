@@ -14,7 +14,8 @@ export const Header: React.FC = () => (
       <Search />
     </div>
 
-
-    <User />
+    <div className="header__user">
+      <User />
+    </div>
   </section>
 );
