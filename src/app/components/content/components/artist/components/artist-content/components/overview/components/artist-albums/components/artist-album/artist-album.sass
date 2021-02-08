@@ -1,0 +1,33 @@
+@import '@helpers/_variables'
+
+.artist-album
+  &__info
+    display: flex
+    flex-flow: row wrap
+
+    margin-bottom: $margin
+
+  &__image
+    width: 135px
+    height: 135px
+
+  &__meta
+    display: flex
+    flex-flow: column wrap
+
+    width: calc( 100% - 150px)
+    margin-left: $margin
+
+  &__year
+    color: $grey
+    letter-spacing: 1px
+
+  &__name
+    color: $white
+    font-size: $xx-large / 1.2
+    font-weight: 100
+
+  &__actions
+    display: flex
+
+    margin-top: auto

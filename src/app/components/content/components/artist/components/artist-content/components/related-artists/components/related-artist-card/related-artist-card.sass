@@ -1,0 +1,27 @@
+@import '@helpers/_variables'
+
+.related-artist-card
+  &_small
+    margin-bottom: $margin-xxs
+
+    @media screen and ( max-width: 1024px)
+      margin: $margin-sm
+      width: calc( (100% / 3) - 20px )
+
+    @media screen and ( max-width: 768px)
+      margin: $margin-xs
+      width: calc( (100% / 2) - 10px )
+
+    @media screen and ( max-width: 480px)
+      margin: $margin-xs
+      width: 20%
+
+      background: none
+
+  &_large
+    margin: $margin
+    padding: 0
+    max-width: 250px
+
+    @media screen and ( max-width: 480px)
+      max-width: 420px

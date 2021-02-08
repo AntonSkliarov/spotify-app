@@ -1,0 +1,47 @@
+@import '@helpers/_variables'
+
+.latest-release
+  &__title
+    margin-bottom: $margin-sm
+
+    text-transform: uppercase
+    color: $grey
+    letter-spacing: 1.25px
+    font-size: $x-small * 1.2
+    font-weight: 400
+
+  &__track
+    display: flex
+    flex-flow: row wrap
+
+    margin-bottom: $margin-lg
+
+    @media screen and ( max-width: 400px)
+      font-size: $small
+
+  &__image-container
+    widows: 75px
+
+  &__image
+    width: 75px
+    height: 75px
+
+  &__track-details
+    display: flex
+    flex-flow: column wrap
+    justify-content: space-between
+
+    width: calc(100% - 75px)
+    padding: $padding-sm $padding
+
+    color: $grey
+
+    background: $light-black
+
+  &__track-title
+    color: $sand
+
+    font-size: $small
+
+  &__track-date
+    font-size: $small

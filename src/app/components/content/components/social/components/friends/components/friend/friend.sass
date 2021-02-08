@@ -1,0 +1,20 @@
+@import '@helpers/_variables'
+
+.friend
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+
+  padding: $padding 0
+
+  color: $grey
+  font-size: $small
+  line-height: $small
+
+  &__icon
+    margin-right: $margin
+
+  @media (hover)
+    &:hover
+      text-decoration: underline
+      color: $sand

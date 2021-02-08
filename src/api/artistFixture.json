@@ -1,0 +1,169 @@
+{
+  "artist": {
+    "name": "G-Eazy",
+    "verified": true,
+    "listeners": 15662810,
+    "spotify": "https://open.spotify.com/artist/02kJSzxNuaWGqwubyUba0Z",
+    "photo": "https://bit.ly/3p6ewXg",
+    "latestRelease": {
+        "title": "Drifting (Track Commentary)",
+        "date": "4 December 2015",
+        "albumImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg",
+        "id": 1
+    },
+    "popularTracks": [
+      {
+        "title": "Still Be Friends",
+        "feat": ["Tory Lanez", "Tyga"],
+        "duration": 213000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg",
+        "id": 1,
+        "inFavorites": true
+      },
+      {
+        "title": "Him & I",
+        "feat": ["Halsey"],
+        "duration": 268000,
+        "inMediaLibrary": 551296287,
+        "albumImage": "https://bit.ly/392PmDq",
+        "id": 2,
+        "inFavorites": false
+      },
+      {
+        "title": "Hate The Way",
+        "feat": ["blackbear"],
+        "duration": 214000,
+        "inMediaLibrary": 29448443,
+        "albumImage": "https://bit.ly/2LJasy0",
+        "id": 3,
+        "inFavorites": true
+      },
+      {
+        "title": "Me, Myself & I",
+        "feat": [
+          "Babe Rexha"
+        ],
+        "duration": 251000,
+        "inMediaLibrary": 930864042,
+        "albumImage": "https://bit.ly/2KxMW6f",
+        "id": 4,
+        "inFavorites": false
+      },
+      {
+        "title": "No Limit",
+        "feat": [
+          "A$AP Rocky", "Cardi B"
+        ],
+        "duration": 245000,
+        "inMediaLibrary": 508246109,
+        "albumImage": "https://bit.ly/392PmDq",
+        "id": 5,
+        "inFavorites": true
+      },
+      {
+        "title": "Share That Love",
+        "feat": null,
+        "duration": 172000,
+        "inMediaLibrary": 39230292,
+        "albumImage": "https://bit.ly/2LSuLc3",
+        "id": 6,
+        "inFavorites": false
+      },
+      {
+        "title": "Moana",
+        "feat": [
+          "Jack Harlow"
+        ],
+        "duration": 178000,
+        "inMediaLibrary": 62165487,
+        "albumImage": "https://bit.ly/3bZehcQ",
+        "id": 7,
+        "inFavorites": true
+      },
+      {
+        "title": "I Mean It",
+        "feat": [
+          "Remo"
+        ],
+        "duration": 236000,
+        "inMediaLibrary": 356353617,
+        "albumImage": "https://bit.ly/3o1xRrd",
+        "id": 8,
+        "inFavorites": true
+      },
+      {
+        "title": "Some Kind Of Drug",
+        "feat": [
+          "Marc E. Bassy"
+        ],
+        "duration": 222000,
+        "inMediaLibrary": 249968639,
+        "albumImage": "https://bit.ly/2KxMW6f",
+        "id": 9,
+        "inFavorites": false
+      },
+      {
+        "title": "2 Seater",
+        "feat": [
+          "Offset", "YBN Nahmir"
+        ],
+        "duration": 229000,
+        "inMediaLibrary": 31171874,
+        "albumImage": "https://bit.ly/2LQGuIg",
+        "id": 10,
+        "inFavorites": true
+      }
+    ],
+    "relatedArtists": [
+      {
+        "name": "Hoodie Allen",
+        "spotify": "https://open.spotify.com/artist/382aq8Pij5V2nE2JMHMoxl",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg",
+        "id": 1
+      },
+      {
+        "name": "Mike Stud",
+        "spotify": "https://open.spotify.com/artist/5G9kmDLg3OeUyj8KVBLzbu",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud_large.jpg",
+        "id": 2
+      },
+      {
+        "name": "Drake",
+        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake_large.jpg",
+        "id": 3
+      },
+      {
+        "name": "J. Cole",
+        "spotify": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole_large.jpg",
+        "id": 4
+      },
+      {
+        "name": "Big Sean",
+        "spotify": "https://open.spotify.com/artist/0c173mlxpT3dSFRgMO8XPh",
+        "image": "https://cdn41.zvuk.com/pic?type=artist&id=213633&size=500x500&ext=jpg",
+        "id": 5
+      },
+      {
+        "name": "Wiz Khalifa",
+        "spotify": "https://open.spotify.com/artist/137W8MRPWKqSmrBGDBFSop",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg",
+        "id": 6
+      },
+      {
+        "name": "Yonas",
+        "spotify": "https://open.spotify.com/artist/6gWsNpg9lhVbimwQ8bP5K1",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg",
+        "id": 7
+      },
+      {
+        "name": "Childish Gambino",
+        "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL",
+        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/childish.jpg",
+        "id": 8
+      }
+    ]
+  }
+}

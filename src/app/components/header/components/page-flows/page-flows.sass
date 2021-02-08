@@ -1,0 +1,23 @@
+@import '@helpers/_variables'
+
+.page-flows
+  line-height: 10px
+
+  &__arrow
+    margin: 0 $margin-xs
+
+  &__button
+    color: $grey
+
+    border: none
+    outline: none
+    background: none
+
+    cursor: pointer
+
+    @media (hover)
+      &:hover
+        color: $white
+
+    &_disabled
+      color: darken($grey , 30%)

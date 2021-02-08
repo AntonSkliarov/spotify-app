@@ -1,0 +1,29 @@
+@import '@helpers/_variables'
+
+.arrow-button
+  display: inline-block
+
+  color: $grey
+
+  border: none
+  outline: none
+  background: none
+
+  cursor: pointer
+
+  @media (hover)
+    &:hover
+      color: $white
+
+  &_disabled
+    color: darken($grey , 30%)
+
+    @media (hover)
+      &:hover
+        color: darken($grey , 30%)
+
+        cursor: default
+
+  &__down,
+  &__up
+    margin-right: $margin-sm

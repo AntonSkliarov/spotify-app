@@ -1,0 +1,33 @@
+@import '@helpers/_variables'
+
+.progress
+  display: flex
+  flex-flow: row
+  justify-content: space-between
+  align-items: center
+
+  width: 70%
+  padding: 0 $padding-lg
+
+  color: $grey
+  font-size: $x-small
+
+  &__bar
+    width: 100%
+    padding: 0 $padding
+
+  &:hover .song-progress .noUi-handle
+    display: block
+
+  @media screen and ( max-width: 1400px)
+    width: 50%
+
+  @media screen and ( max-width: 980px)
+    width: 40%
+
+  @media screen and ( max-width: 768px)
+    width: 75%
+
+  @media screen and ( max-width: 480px)
+    width: 100%
+    padding: $padding-xs 0

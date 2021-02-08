@@ -1,0 +1,44 @@
+@import '@helpers/_variables'
+
+.related-artists
+  width: 30%
+
+  &_small
+    @media screen and ( max-width: 1024px)
+      margin-top: $margin
+      width: 100%
+
+  &_large
+    width: 100%
+
+  &__title
+    margin-bottom: $margin-sm
+
+    text-transform: uppercase
+    color: $grey
+    letter-spacing: 1.25px
+    font-size: $x-small * 1.2
+    font-weight: 400
+
+  &__list
+    display: flex
+    flex-flow: column wrap
+
+    &_small
+      @media screen and ( max-width: 1024px)
+        display: flex
+        flex-flow: row wrap
+
+    &_large
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+
+      @media screen and ( max-width: 1200px)
+        grid-template-columns: repeat(3, 1fr)
+
+      @media screen and ( max-width: 768px)
+        grid-template-columns: repeat(2, 1fr)
+
+      @media screen and ( max-width: 480px)
+        grid-template-columns: repeat(1, 1fr)
+

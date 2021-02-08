@@ -1,0 +1,48 @@
+@import '@helpers/_variables'
+
+.large-rel-artist-card
+  &__image-container
+    display: flex
+    align-items: center
+
+    height: 200px
+
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    @media (hover)
+      &:hover .large-rel-artist-card__icon
+        opacity: 1
+        transition: opacity $hover-transition-duration ease
+
+  &__icon
+    margin: 0 auto
+
+    color: $white
+
+    opacity: 0
+    transition: opacity $hover-transition-duration ease
+    filter: drop-shadow(0 0 0.75rem black)
+
+    @media (hover)
+      &:hover
+        cursor: pointer
+
+  &__link
+    display: block
+    padding: $padding
+
+    font-size: $small
+    color: $white
+
+    background: $light-black
+
+    @media (hover)
+      &:hover
+        text-decoration: underline
+
+      cursor: pointer
+
+  &__name
+    color: $white

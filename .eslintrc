@@ -11,7 +11,8 @@
     }
   },
   "rules": {
-    "semi": "error"
+    "semi": "error",
+    "react/prop-types": 0
   },
   "env": {
     "browser": true

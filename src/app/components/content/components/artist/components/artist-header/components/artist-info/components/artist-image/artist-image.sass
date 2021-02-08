@@ -1,0 +1,28 @@
+@import '@helpers/_variables'
+
+.artist-image
+  position: relative
+  margin-right: $margin
+
+  @media screen and ( max-width: 522px)
+    margin-right: 0
+
+  &__photo
+    width: 150px
+    height: 150px
+
+    border-radius: $border-radius-circle
+
+  &__authorized
+    position: absolute
+    bottom: 5px
+    right: 25px
+    text-align: center
+
+    width: 20px
+    height: 20px
+
+    color: $white
+
+    background-color: $blue
+    border-radius: $border-radius-circle

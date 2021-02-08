@@ -1,0 +1,17 @@
+@import '@helpers/_variables'
+
+.explicit
+  &__value
+    padding: $padding-xxs $padding-xs
+
+    color: lighten($light-black , 10%)
+    text-transform: uppercase
+    font-size: $x-small
+
+    border: 1px
+    border-style: solid
+    border-color: lighten($light-black, 10%)
+
+  @media screen and ( max-width: 1200px)
+    display: none
+

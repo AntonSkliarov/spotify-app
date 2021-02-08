@@ -1,0 +1,36 @@
+@import '@helpers/_variables'
+
+.playing
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+
+  background: $light-black
+  border-bottom: 1px solid $black
+
+  @media screen and ( max-width: 768px)
+    border-top: 1px solid $black
+
+  &__image-container
+    width: 50px
+    height: 50px
+
+  &__track
+    display: flex
+    flex-flow: column wrap
+
+    padding-left: $padding
+
+  &__track-name,
+  &__track-artist
+    color: $grey
+    font-size: $small
+
+    @media (hover)
+      &:hover
+        color: $white
+        text-decoration: underline
+
+  &__add-to-fav-button
+    margin-left: auto
+    padding-right: 15px

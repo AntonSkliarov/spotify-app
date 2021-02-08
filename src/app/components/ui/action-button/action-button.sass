@@ -1,0 +1,110 @@
+@import '@helpers/_variables'
+
+.action-button
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+
+  padding: 0 $padding
+  height: 27px
+
+  font-size: $x-small
+  font-weight: 500
+  line-height: 11px
+  color: $grey
+  text-transform: uppercase
+  letter-spacing: 1px
+
+  outline: none
+  background: none
+
+  cursor: pointer
+
+  &__play
+    margin-right: $margin-sm
+
+    color: $white
+
+    background: $green
+    border: 1px solid $green
+    border-radius: $border-radius-lg
+
+    @media (hover)
+      &:hover
+        filter: brightness(108%)
+
+  &__play-icon
+    display: flex
+
+    margin-right: $margin-xs
+
+  &__follow
+    margin-right: $margin-sm
+
+    color: $sand
+
+    border: 1px solid $sand
+    border-radius: $border-radius-lg
+
+    @media (hover)
+      &:hover
+        color: $white
+
+        border-color: $white
+
+  &__more
+    text-align: center
+
+    width: 27px
+    height: 27px
+    padding: 0 0 0 $padding-xxs * 1.3
+
+    color: $sand
+
+    border: 1px solid $sand
+    border-radius: $border-radius-circle
+
+    @media (hover)
+      &:hover
+        color: $white
+
+        border-color: $white
+
+  &__save
+    margin-right: $margin-sm
+    padding: 0 $padding-lg
+
+    color: $sand
+
+    border: 1px solid $sand
+    border-radius: $border-radius-lg
+
+    @media (hover)
+      &:hover
+        color: $white
+
+        border-color: $green
+
+  &__find-friends
+    color: $sand
+
+    border: 1px solid $sand
+    border-radius: $border-radius-lg
+
+    @media (hover)
+      &:hover
+        color: $white
+
+        border-color: $white
+
+  &__5-more
+    color: $sand
+
+    border: 1px solid $sand
+    border-radius: $border-radius-lg
+
+    @media (hover)
+      &:hover
+        color: $white
+
+        border-color: $white

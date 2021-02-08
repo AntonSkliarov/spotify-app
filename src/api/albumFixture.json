@@ -1,0 +1,162 @@
+{
+  "album": {
+    "name": "When It's Dark Out",
+    "image": "https://bit.ly/394bfCh",
+    "releaseDate": 2015,
+    "tracks": [
+      {
+        "title": "Intro",
+        "feat": null,
+        "duration": 71000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 1,
+        "inFavorites": true
+      },
+      {
+        "title": "Random",
+        "feat": null,
+        "duration": 180000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 2,
+        "inFavorites": true
+      },
+      {
+        "title": "Me, Myself & I",
+        "feat": ["Bebe Rexha"],
+        "duration": 251000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 3,
+        "inFavorites": true
+      },
+      {
+        "title": "One Of Them",
+        "feat": ["Big Sean"],
+        "duration": 200000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 4,
+        "inFavorites": true
+      },
+      {
+        "title": "Drifting",
+        "feat": ["Chris Brown, Tory Lanez"],
+        "duration": 273000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 5,
+        "inFavorites": true
+      },
+      {
+        "title": "Of All Things",
+        "feat": ["Too $hort"],
+        "duration": 214000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 6,
+        "inFavorites": true
+      },
+      {
+        "title": "Order More",
+        "feat": ["Starrah"],
+        "duration": 209000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 7,
+        "inFavorites": true
+      },
+      {
+        "title": "Calm Down",
+        "feat": null,
+        "duration": 127000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 8,
+        "inFavorites": true
+      },
+      {
+        "title": "Don't Let Me Go",
+        "feat": ["Grace"],
+        "duration": 191000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 9,
+        "inFavorites": false
+      },
+      {
+        "title": "You Got Me",
+        "feat": null,
+        "duration": 208000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 10,
+        "inFavorites": true
+      },
+      {
+        "title": "What If",
+        "feat": ["Gizzle"],
+        "duration": 253000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 11,
+        "inFavorites": true
+      },
+      {
+        "title": "Sad Boy",
+        "feat": null,
+        "duration": 203000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 12,
+        "inFavorites": true
+      },
+      {
+        "title": "Some Kind Of Drug",
+        "feat": ["Marc E. Bassy"],
+        "duration": 222000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 13,
+        "inFavorites": true
+      },
+      {
+        "title": "Think About You",
+        "feat": ["Quin"],
+        "duration": 179000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 14,
+        "inFavorites": true
+      },
+      {
+        "title": "Everything Will Be OK",
+        "feat": ["Kehlani"],
+        "duration": 311000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 15,
+        "inFavorites": true
+      },
+      {
+        "title": "For This",
+        "feat": ["Iamnobodi"],
+        "duration": 251000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 16,
+        "inFavorites": true
+      },
+      {
+        "title": "Nothing to Me",
+        "feat": ["Keyshia Cole, E-40"],
+        "duration": 330000,
+        "inMediaLibrary": 155374010,
+        "albumImage": "https://bit.ly/394bfCh",
+        "id": 17,
+        "inFavorites": true
+      }
+    ]
+  }
+}
