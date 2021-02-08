@@ -6,8 +6,15 @@ import { User } from './components/user';
 
 export const Header: React.FC = () => (
   <section className="header">
-    <PageFlows />
-    <Search />
+    <div className="header__page-flows">
+      <PageFlows />
+    </div>
+
+    <div className="header__search">
+      <Search />
+    </div>
+
+
     <User />
   </section>
 );
