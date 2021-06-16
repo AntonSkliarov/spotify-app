@@ -3,7 +3,7 @@
 For demo click [HERE](https://antonskliarov.github.io/spotify-app/)
 
 ## Tech stack
-*****
+
 1. HTML5
 1. SASS
 1. TypeScript
