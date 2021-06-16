@@ -2,6 +2,11 @@
 
 For demo click [HERE](https://antonskliarov.github.io/spotify-app/)
 
+##
+1. HTML5
+1. SASS
+1. TypeScript
+1. React (v.17.0.1)
 
 ## Install and Usage
 *****
